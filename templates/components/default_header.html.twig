@@ -1,7 +1,7 @@
 <header {{ attributes }}>
-	<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+	<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
 		<div class="container">
-			<a class="navbar-brand" href="/">
+			<a class="navbar-brand" href="{{path('app_home')}}">
 				titouanthd.com
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,11 +46,29 @@
 				<span class="navbar-text me-3">
 					Dark | Light
 				</span>
-				<span class="navbar-text">
-					<a href="">Connexion</a>
-					|
-					<a href="">Inscription</a>
-				</span>
+				{% if app.user.email %}
+					<!-- user dropdown -->
+					<div class="dropdown">
+						<a class="dropdown-toggle" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							{{ app.user.email }}
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="userDropdown">
+							<li>
+								<a class="dropdown-item" href="#cv">CV</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#">Lettre de motivation</a>
+							</li>
+						</ul>
+					</div>
+				{% else %}
+					<span class="navbar-text">
+						<a href="{{path('app_login')}}">Connexion</a>
+						|
+						<a href="{{path('app_register')}}">Inscription</a>
+					</span>
+				{% endif %}
+
 			</div>
 		</div>
 	</nav>

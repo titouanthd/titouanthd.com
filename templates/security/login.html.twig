@@ -1,0 +1,68 @@
+{% extends 'layouts/base.html.twig' %}
+
+{% block title %}Log in!
+{% endblock %}
+
+{% block header %}
+	{# Empty block needed to remove default_header #}
+{% endblock %}
+{% block footer %}
+	{# Empty block needed to remove default_footer #}
+{% endblock %}
+
+{% block body %}
+
+	<div class="container">
+		<div class="row d-flex align-items-center justify-content-center vh-100">
+			<div class="col-12 col-md-6 col-lg-4">
+
+				<div class="card">
+					<div class="card-body">
+
+						<form method="post">
+							{% if error %}
+								<div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+							{% endif %}
+
+							{% if app.user %}
+								<div class="mb-3">
+									You are logged in as
+									{{ app.user.userIdentifier }},
+									<a href="{{ path('app_logout') }}">Logout</a>
+								</div>
+							{% endif %}
+
+							<h1 class="h3">Please sign in</h1>
+
+							<label for="inputEmail" class="form-label">Email</label>
+							<input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control mb-3" autocomplete="email" required autofocus>
+							<label for="inputPassword" class="form-label">Password</label>
+							<input type="password" name="password" id="inputPassword" class="form-control mb-3" autocomplete="current-password" required>
+
+							<div class="form-check mb-3">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" name="_remember_me">
+									Remember me
+								</label>
+							</div>
+
+							<div class="row">
+								<div class="col">
+									<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+									<button class="btn btn-primary" type="submit">
+										Sign in
+									</button>
+								</div>
+								<div class="col">
+									<a href="{{ path('app_register') }}">Register</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}

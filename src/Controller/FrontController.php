@@ -8,12 +8,9 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class FrontController extends AbstractController
 {
-    #[Route('/', name: 'app_front_home')]
+    #[Route('/', name: 'app_home')]
     public function home(): Response
     {
-
-
-
         return $this->render('front/home.html.twig', [
             'controller_name' => 'FrontController',
         ]);

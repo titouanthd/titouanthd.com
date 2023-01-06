@@ -13,9 +13,7 @@ $font-family-base: 'Roboto', sans-serif;
 
 // custom code
 .screen-height {
-  // 100vh is the height of the viewport
-  // 56px is the height of the navbar
-  height: calc(100vh - 56px);
+  height: 100vh;
 }
 .infinite-rotate {
   animation: rotate-animation 2s infinite linear;
