@@ -48,6 +48,9 @@ class RegistrationController extends AbstractController
                 )
             );
 
+            // generated a pseudo based on email
+            $user->setPseudo(explode('@', $user->getEmail())[0]);
+
             $entityManager->persist($user);
             $entityManager->flush();
 

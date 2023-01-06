@@ -25,6 +25,9 @@ class UserFixtures extends Fixture
         $password =  $this->hasher->hashPassword($admin, '0000');
         $admin->setPassword($password);
 
+        // set isVerified to true
+        $admin->setIsVerified(true);
+
         $manager->persist($admin);
         // echo pseudo and create a new reference for this user
         echo $admin->getPseudo() . ' has been created' . PHP_EOL;
