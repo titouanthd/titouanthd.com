@@ -21,6 +21,7 @@ class UserFixtures extends Fixture
         $admin->setEmail('admin@localhost');
         $admin->setPseudo('admin');
         $admin->setRoles(['ROLE_ADMIN']);
+        $admin->setLinkedin('https://www.linkedin.com/in/titouanthd/');
 
         $password =  $this->hasher->hashPassword($admin, '0000');
         $admin->setPassword($password);

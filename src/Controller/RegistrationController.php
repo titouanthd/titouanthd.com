@@ -30,6 +30,16 @@ class RegistrationController extends AbstractController
     #[Route('/register', name: 'app_register')]
     public function register(Request $request, UserPasswordHasherInterface $userPasswordHasher, UserAuthenticatorInterface $userAuthenticator, LoginAuthenticator $authenticator, EntityManagerInterface $entityManager): Response
     {
+        // if user is already logged in, redirect to home and add a flash message
+        $isLogged = $this->getUser() ? true : false;
+        if ($isLogged) {
+            $this->addFlash('warning', 'You are already logged in, you can\'t access this page. If you want to register a new account, please <a href="/logout">logout first</a> or <a href="/">back to website</a>.');
+
+            // return $this->redirectToRoute('app_home');
+        }
+
+
+        // return $this->redirectToRoute('app_home');
         $user = new User();
         $user->setRoles([
             'ROLE_USER' => 'ROLE_USER',
@@ -73,6 +83,7 @@ class RegistrationController extends AbstractController
 
         return $this->render('registration/register.html.twig', [
             'registrationForm' => $form->createView(),
+            'isLogged' => $isLogged,
         ]);
     }
 

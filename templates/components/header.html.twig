@@ -10,22 +10,22 @@
 			<div class="collapse navbar-collapse" id="navbarText">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="/">Accueil</a>
+						<a class="nav-link active" aria-current="page" href="/">Home</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" id="documentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Documents
+							Tools
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="documentDropdown">
 							<li>
-								<a class="dropdown-item" href="#cv">CV</a>
+								<a class="dropdown-item" href="{{ path('app_cv_builder') }}">CV Builder</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="#">Lettre de motivation</a>
+								<a class="dropdown-item" href="#">Cover letter builder</a>
 							</li>
 						</ul>
 					</li>
-					<li class="nav-item dropdown">
+					{# <li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Blog
 						</a>
@@ -37,35 +37,35 @@
 								<a class="dropdown-item" href="#wordpress">WordPress</a>
 							</li>
 						</ul>
-					</li>
+					</li> #}
 				</ul>
-				<span class="navbar-text me-3">
+				{# <span class="navbar-text me-3">
 					<i class="bi bi-search"></i>
 					Rechercher...
 				</span>
 				<span class="navbar-text me-3">
 					Dark | Light
-				</span>
+				</span> #}
 				{% if app.user %}
 					<!-- user dropdown -->
 					<div class="dropdown">
 						<a class="dropdown-toggle" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							{{ app.user.email }}
 						</a>
-						<ul class="dropdown-menu" aria-labelledby="userDropdown">
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
 							<li>
-								<a class="dropdown-item" href="#cv">CV</a>
+								<a class="dropdown-item" href="{{path('app_profile')}}"><i class="bi bi-person-lines-fill me-2"></i> Profile</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="#">Lettre de motivation</a>
+								<a class="dropdown-item" href="{{ path('app_logout') }}"><i class="bi bi-box-arrow-left me-2"></i> Log out</a>
 							</li>
 						</ul>
 					</div>
 				{% else %}
 					<span class="navbar-text">
-						<a href="{{path('app_login')}}">Connexion</a>
+						<a href="{{path('app_login')}}">Sign in</a>
 						|
-						<a href="{{path('app_register')}}">Inscription</a>
+						<a href="{{path('app_register')}}">Register</a>
 					</span>
 				{% endif %}
 

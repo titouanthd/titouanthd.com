@@ -1,13 +1,13 @@
 <?php
-// header component
+// flashes component
 
 namespace App\Components;
 
 use Symfony\UX\LiveComponent\Attribute\AsLiveComponent;
 use Symfony\UX\LiveComponent\DefaultActionTrait;
 
-#[AsLiveComponent('header')]
-class HeaderComponent
+#[AsLiveComponent('flashes')]
+class FlashesComponent
 {
     use DefaultActionTrait;
 }
