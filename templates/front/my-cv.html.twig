@@ -1,0 +1,33 @@
+{% extends "layouts/base.html.twig" %}
+
+{% block title %}
+	My CV as a web developer | Titouan Thébaud
+{% endblock %}
+
+{% block body %}
+	<div class="container header-margin">
+
+		<div class="row">
+			<div class="col-12 mb-0">
+				<div class="bg-light p-2 border border-bottom-0 border-top-0 d-flex justify-content-end">
+					<div class="dropdown">
+						<button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="downloadDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+							<i class="bi bi-download me-1"></i> Download
+						</button>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="downloadDropdown">
+							<li>
+								<button type="button" class="dropdown-item" data-controller="cv" data-action="click->cv#download_titouanthd_cv_small">Small version</button>
+							</li>
+							<li>
+								<button type="button" class="dropdown-item" data-controller="cv" data-action="click->cv#download_titouanthd_cv_full">Full version</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{% include "front/parts/cv-titouanthd.html.twig" %}
+	</div>
+
+</div>{% endblock %}

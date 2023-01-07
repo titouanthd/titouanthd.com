@@ -3,7 +3,7 @@
 // customize some Bootstrap variables
 $primary: darken(#428bca, 20%);
 
-$font-family-base: 'Roboto', sans-serif;
+$font-family-base: "Roboto", sans-serif;
 
 // the ~ allows you to reference things in node_modules
 @import "~bootstrap/scss/bootstrap";
@@ -14,4 +14,45 @@ $font-family-base: 'Roboto', sans-serif;
 // custom code
 .screen-height {
   height: 100vh;
+}
+
+.header-margin {
+  margin-top: 57px;
+}
+
+.rotate {
+  transition: transform 0.25s;
+  &-180 {
+    transform: rotate(180deg);
+  }
+}
+
+.bg {
+  &-bootstrap {
+    background-color: rgba(113,44,249,1) !important;
+  }
+  &-symfony {
+    background-color: #212121 !important;
+  }
+  &-wordpress {
+    background-color: #0073AA !important;
+  }
+  &-mysql {
+    background-color: #3E6E93 !important;
+  }
+  &-typescript {
+    background-color: #3178c6 !important;
+  }
+  &-php {
+    background-color: #7A86B8 !important;
+  }
+  &-french {
+    background-color: #002654 !important;
+  }
+  &-spain {
+    background-color: #AA151B !important;
+  }
+  &-english {
+    background-color: #012169 !important;
+  }
 }
