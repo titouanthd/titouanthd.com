@@ -1,11 +1,8 @@
-{# add an bootstrap alert component #}
-{% block alerts %}
-	{% for type, messages in app.flashes %}
-		{% for message in messages %}
-			<div class="alert alert-{{ type }} alert-dismissible fade show" role="alert">
-				{{ message|raw }}
-				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-			</div>
-		{% endfor %}
+{% for type, messages in app.flashes %}
+	{% for message in messages %}
+		<div class="alert alert-{{ type }} alert-dismissible fade show" role="alert">
+			{{ message|raw }}
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
 	{% endfor %}
-{% endblock %}
+{% endfor %}

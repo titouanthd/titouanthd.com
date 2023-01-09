@@ -1,0 +1,64 @@
+Language: __Language
+English: __English
+'Hello, my pseudo is @titouanthd and I am a full-stack web developer based in France.': '__Hello, my pseudo is @titouanthd and I am a full-stack web developer based in France.'
+'Hello, my name is Titouan Thebaud and': '__Hello, my name is Titouan Thebaud and'
+'I am a passionate and self-taught full-stack web developer.': '__I am a passionate and self-taught full-stack web developer.'
+'I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).': '__I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).'
+'I am constantly learning new development methods': '__I am constantly learning new development methods'
+'to offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.': '__to offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.'
+'I particularly enjoy using AI and blockchain to create the web of tomorrow. I am also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.': '__I particularly enjoy using AI and blockchain to create the web of tomorrow. I am also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.'
+'Latest posts': '__Latest posts'
+French: __French
+"<p class=\"font-monospace\">\n\t\t\t\t\t\t\t\tHello, my name is Titouan Thebaud and\n\t\t\t\t\t\t\t\t<strong>I am a passionate and self-taught full-stack web developer.</strong> I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).<br><br>\n\t\t\t\t\t\t\t\t<b>I am constantly learning new development methodstrans</b>\n\t\t\t\t\t\t\t\tto offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.trans\n\t\t\t\t\t\t\t\t<br><br>\n\t\t\t\t\t\t\t\tI particularly enjoy using AI and blockchain to create the web of tomorrow. I am also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.trans\n\t\t\t\t\t\t\t</p>": "__<p class=\"font-monospace\">\n\t\t\t\t\t\t\t\tHello, my name is Titouan Thebaud and\n\t\t\t\t\t\t\t\t<strong>I am a passionate and self-taught full-stack web developer.</strong> I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).<br><br>\n\t\t\t\t\t\t\t\t<b>I am constantly learning new development methodstrans</b>\n\t\t\t\t\t\t\t\tto offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.trans\n\t\t\t\t\t\t\t\t<br><br>\n\t\t\t\t\t\t\t\tI particularly enjoy using AI and blockchain to create the web of tomorrow. I am also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.trans\n\t\t\t\t\t\t\t</p>"
+'Covering Letter as a full-stack web developer': '__Covering Letter as a full-stack web developer'
+Employer: Employeur
+'Previous Company': 'Entreprise précédente'
+Download: Télécharger
+'Application for the position of full-stack web developer': '__Application for the position of full-stack web developer'
+"<p>Dear <span data-CoveringLetter-target=\"employer\">[Employer]</span>,</p>\n    <p>I am writing to apply for the position of Full Stack Web Developer at <span data-CoveringLetter-target=\"companies\">[Company]</span>. As a highly skilled and passionate developer with experience in both front-end and back-end technologies, I am confident in my ability to contribute to the success of your team.</p>\n    <p>During my previous experiences, I have acquired skills in developing responsive and user-friendly websites and web applications using a variety of technologies, including HTML, CSS, JavaScript, and PHP. I have also worked on integrating these applications with RESTful APIs and database systems, as well as implementing security and authentication measures to protect sensitive data.</p>\n    <p>In addition to my technical skills, I have strong problem-solving and communication abilities, and I enjoy collaborating with cross-functional teams to identify and address business needs. I am excited about the opportunity to join your team and bring my skills and experience to help drive the development of innovative web solutions at <span data-CoveringLetter-target=\"companies\">[Company]</span>.</p>\n    <p>Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experience can contribute to the success of your team.</p>\n    <p>Sincerely,<br>\n    Titouan Thébaud</p>": "__<p>Dear <span data-CoveringLetter-target=\"employer\">[Employer]</span>,</p>\n    <p>I am writing to apply for the position of Full Stack Web Developer at <span data-CoveringLetter-target=\"companies\">[Company]</span>. As a highly skilled and passionate developer with experience in both front-end and back-end technologies, I am confident in my ability to contribute to the success of your team.</p>\n    <p>During my previous experiences, I have acquired skills in developing responsive and user-friendly websites and web applications using a variety of technologies, including HTML, CSS, JavaScript, and PHP. I have also worked on integrating these applications with RESTful APIs and database systems, as well as implementing security and authentication measures to protect sensitive data.</p>\n    <p>In addition to my technical skills, I have strong problem-solving and communication abilities, and I enjoy collaborating with cross-functional teams to identify and address business needs. I am excited about the opportunity to join your team and bring my skills and experience to help drive the development of innovative web solutions at <span data-CoveringLetter-target=\"companies\">[Company]</span>.</p>\n    <p>Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experience can contribute to the success of your team.</p>\n    <p>Sincerely,<br>\n    Titouan Thébaud</p>"
+Profile: __Profile
+Documents: __Documents
+'My CV': '__My CV'
+'My Covering letter': '__My Covering letter'
+'Blog categories': '__Blog categories'
+'Helpfull links': '__Helpfull links'
+Contact: __Contact
+'Privacy policy': '__Privacy policy'
+'Legal notice': '__Legal notice'
+'Subscribe to my newsletter': '__Subscribe to my newsletter'
+'Stay aware. Be notified when I create something new and/or usefull.': '__Stay aware. Be notified when I create something new and/or usefull.'
+'Email address': '__Email address'
+Subscribe: __Subscribe
+'© 2022 Company, Inc. All rights reserved.': '__© 2022 Company, Inc. All rights reserved.'
+Home: __Home
+'Log out': '__Log out'
+'Sign in': '__Sign in'
+Register: __Register
+"<p>Dear <span data-CoveringLetter-target=\"employer\">[Employer]</span>,</p>\n    <p>I am writing to apply for the position of Full Stack Web Developer at <span data-CoveringLetter-target=\"companies\">[Previous Company]</span>. As a highly skilled and passionate developer with experience in both front-end and back-end technologies, I am confident in my ability to contribute to the success of your team.</p>\n    <p>During my previous experiences, I have acquired skills in developing responsive and user-friendly websites and web applications using a variety of technologies, including HTML, CSS, JavaScript, and PHP. I have also worked on integrating these applications with RESTful APIs and database systems, as well as implementing security and authentication measures to protect sensitive data.</p>\n    <p>In addition to my technical skills, I have strong problem-solving and communication abilities, and I enjoy collaborating with cross-functional teams to identify and address business needs. I am excited about the opportunity to join your team and bring my skills and experience to help drive the development of innovative web solutions at <span data-CoveringLetter-target=\"companies\">[Previous Company]</span>.</p>\n    <p>Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experience can contribute to the success of your team.</p>\n    <p>Sincerely,<br>\n    Titouan Thébaud</p>": "__<p>Dear <span data-CoveringLetter-target=\"employer\">[Employer]</span>,</p>\n    <p>I am writing to apply for the position of Full Stack Web Developer at <span data-CoveringLetter-target=\"companies\">[Previous Company]</span>. As a highly skilled and passionate developer with experience in both front-end and back-end technologies, I am confident in my ability to contribute to the success of your team.</p>\n    <p>During my previous experiences, I have acquired skills in developing responsive and user-friendly websites and web applications using a variety of technologies, including HTML, CSS, JavaScript, and PHP. I have also worked on integrating these applications with RESTful APIs and database systems, as well as implementing security and authentication measures to protect sensitive data.</p>\n    <p>In addition to my technical skills, I have strong problem-solving and communication abilities, and I enjoy collaborating with cross-functional teams to identify and address business needs. I am excited about the opportunity to join your team and bring my skills and experience to help drive the development of innovative web solutions at <span data-CoveringLetter-target=\"companies\">[Previous Company]</span>.</p>\n    <p>Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experience can contribute to the success of your team.</p>\n    <p>Sincerely,<br>\n    Titouan Thébaud</p>"
+'Developpeur web freelance': '__Developpeur web freelance'
+'Hello, my name is Titouan and I am a full-stack web developer based in France.': '__Hello, my name is Titouan and I am a full-stack web developer based in France.'
+Print: __Print
+'My CV as a web developer': '__My CV as a web developer'
+'Short version': '__Short version'
+'Full version': '__Full version'
+'You must be logged in to access this page. Please <a href="/login">sign in</a> or <a href="/register">register</a>.': '__You must be logged in to access this page. Please <a href="/login">sign in</a> or <a href="/register">register</a>.'
+'Full-stack web developer based in Annecy - Titouan Thd': '__Full-stack web developer based in Annecy - Titouan Thd'
+'Covering Letter as a full-stack web developer - Titouan Thd': '__Covering Letter as a full-stack web developer - Titouan Thd'
+'CV as a full-stack web developer - Titouan Thd': '__CV as a full-stack web developer - Titouan Thd'
+'User Profile - Titouan Thd': '__User Profile - Titouan Thd'
+'User Profile': '__User Profile'
+'Welcome on my website - Titouan Thd': '__Welcome on my website - Titouan Thd'
+'Hi! Please confirm your email!': '__Hi! Please confirm your email!'
+'Please confirm your email address by clicking the following link:': '__Please confirm your email address by clicking the following link:'
+'Confirm my Email': '__Confirm my Email'
+'This link will expire in': '__This link will expire in'
+Cheers!: __Cheers!
+'Please register': '__Please register'
+Password: __Password
+'Log in': '__Log in'
+'Please sign in': '__Please sign in'
+Email: __Email
+'Remember me': '__Remember me'
+'You are already logged in, you can''t access this page. If you want to register a new account, please <a href="/logout">logout first</a> or <a href="/">back to website</a>.': '__You are already logged in, you can''t access this page. If you want to register a new account, please <a href="/logout">logout first</a> or <a href="/">back to website</a>.'
+'Your email address has been verified.': '__Your email address has been verified.'
+'Agree terms': '__Agree terms'

@@ -1,15 +1,20 @@
 {% extends 'layouts/base.html.twig' %}
 
-{% block title %}My Profile{% endblock %}
+{% block title %}
+	{{ 'User Profile - Titouan Thd'|trans }}
+{% endblock %}
 
 {% block stylesheets %}
-{{ parent() }}
+	{{ parent() }}
 {% endblock %}
 
 {% block javascripts %}
-{{ parent() }}
+	{{ parent() }}
 {% endblock %}
 
 {% block body %}
-<div class="" style="margin-top:56px;"></div>
+	<div class="container header-margin">
+		<h1>{{'User Profile'|trans}}</h1>
+		{{ component('flashes') }}
+	</div>
 {% endblock %}

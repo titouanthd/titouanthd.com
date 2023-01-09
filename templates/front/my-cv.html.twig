@@ -1,7 +1,7 @@
 {% extends "layouts/base.html.twig" %}
 
 {% block title %}
-	My CV as a web developer | Titouan Thébaud
+	{{'CV as a full-stack web developer - Titouan Thd'|trans}}
 {% endblock %}
 
 {% block body %}
@@ -12,14 +12,14 @@
 				<div class="bg-light p-2 border border-bottom-0 border-top-0 d-flex justify-content-end">
 					<div class="dropdown">
 						<button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="downloadDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-							<i class="bi bi-download me-1"></i> Download
+							<i class="bi bi-download me-1"></i> {{'Download'|trans}}
 						</button>
 						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="downloadDropdown">
 							<li>
-								<button type="button" class="dropdown-item" data-controller="CV" data-action="click->CV#download_titouanthd_cv_small">Small version</button>
+								<button type="button" class="dropdown-item" data-controller="CV" data-action="click->CV#download_titouanthd_cv_small">{{'Short version'|trans}}</button>
 							</li>
 							<li>
-								<button type="button" class="dropdown-item" data-controller="CV" data-action="click->CV#download_titouanthd_cv_full">Full version</button>
+								<button type="button" class="dropdown-item" data-controller="CV" data-action="click->CV#download_titouanthd_cv_full">{{'Full version'|trans}}</button>
 							</li>
 						</ul>
 					</div>

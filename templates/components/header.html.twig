@@ -1,3 +1,6 @@
+{% set currentRoute = app.request.attributes.get('_route') %}
+{% set currentUrl = path(app.request.attributes.get('_route')	, app.request.attributes.get('_route_params')) %}
+
 <header {{ attributes }}>
 	<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
 		<div class="container">
@@ -8,81 +11,64 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarText">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="/">Home</a>
+						<a class="nav-link {% if currentRoute == 'app_home' %}active{% endif %}" aria-current="page" href="{{path('app_home')}}">{{'Home'|trans}}</a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="documentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Documents
+						<a class="nav-link {% if currentRoute == 'app_my_cv' or currentRoute == 'app_my_covering_letter' %}active{% endif %} dropdown-toggle" id="documentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							{{'Documents'|trans}}
 						</a>
-						<ul class="dropdown-menu" aria-labelledby="documentDropdown">
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="documentDropdown">
 							<li>
-								<a class="dropdown-item" href="{{ path('app_my_cv') }}">My CV</a>
+								<a class="dropdown-item {% if currentRoute == 'app_my_cv' %}active{% endif %}" href="{{ path('app_my_cv') }}">{{'My CV'|trans}}</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="{{ path('app_my_covering_letter') }}">My Covering letter</a>
+								<a class="dropdown-item {% if currentRoute == 'app_my_covering_letter' %}active{% endif %}" href="{{ path('app_my_covering_letter') }}">{{'My Covering letter'|trans}}</a>
 							</li>
 						</ul>
 					</li>
-					{# <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="documentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Tools
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							{{'Language'|trans}}
 						</a>
-						<ul class="dropdown-menu" aria-labelledby="documentDropdown">
+						<ul data-controller="LocalSwitch" class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
 							<li>
-								<a class="dropdown-item" href="{{ path('app_cv_builder') }}">CV Builder</a>
+								<button data-localswitch-target="french" data-action="click->LocalSwitch#switch" data-language="fr" class="dropdown-item {% if '/fr/' in currentUrl %}active{% endif %}">{{'French'|trans}}</button>
 							</li>
 							<li>
-								<a class="dropdown-item" href="#">Cover letter builder</a>
+								<button data-localswitch-target="english" data-action="click->LocalSwitch#switch" data-language="en" class="dropdown-item {% if '/en/' in currentUrl %}active{% endif %}">{{'English'|trans}}</button>
 							</li>
 						</ul>
-					</li> #}
-					{# <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Blog
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="blogDropdown">
-							<li>
-								<a class="dropdown-item" href="#symfony">Symfony</a>
-							</li>
-							<li>
-								<a class="dropdown-item" href="#wordpress">WordPress</a>
-							</li>
-						</ul>
-					</li> #}
-				</ul>
-				{# <span class="navbar-text me-3">
-					<i class="bi bi-search"></i>
-					Rechercher...
-				</span>
-				<span class="navbar-text me-3">
-					Dark | Light
-				</span> #}
-				{% if app.user %}
-					<!-- user dropdown -->
-					<div class="dropdown">
-						<a class="dropdown-toggle" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							{{ app.user.email }}
-						</a>
-						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-							<li>
-								<a class="dropdown-item" href="{{path('app_profile')}}"><i class="bi bi-person-lines-fill me-2"></i> Profile</a>
-							</li>
-							<li>
-								<a class="dropdown-item" href="{{ path('app_logout') }}"><i class="bi bi-box-arrow-left me-2"></i> Log out</a>
-							</li>
-						</ul>
-					</div>
-				{% else %}
-					<span class="navbar-text">
-						<a href="{{path('app_login')}}">Sign in</a>
-						|
-						<a href="{{path('app_register')}}">Register</a>
-					</span>
-				{% endif %}
-
-			</div>
+					</li>
+					{% if app.user %}
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								{{ app.user.email }}
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+								<li>
+									<a class="dropdown-item" href="{{path('app_profile')}}">
+										<i class="bi bi-person-lines-fill me-2"></i>
+										{{'Profile'|trans}}</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="{{ path('app_logout') }}">
+										<i class="bi bi-box-arrow-left me-2"></i>
+										{{'Log out'|trans}}</a>
+								</li>
+							</ul>
+						</li>
+					{% else %}
+						<li class="nav-item">
+							<a class="nav-link" href="{{path('app_login')}}">{{'Sign in'|trans}}</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{path('app_register')}}">{{'Register'|trans}}</a>
+						</li>
+					{% endif %}
+				</li>
+			</ul>
 		</div>
-	</nav>
-</header>
+	</div>
+</nav></header>

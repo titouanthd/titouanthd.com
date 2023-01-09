@@ -1,7 +1,7 @@
 {% extends "layouts/base.html.twig" %}
 
 {% block title %}
-	Covering Letter as a full-stack web developer | Titouan Thébaud
+	{{'Covering Letter as a full-stack web developer - Titouan Thd'|trans}}
 {% endblock %}
 
 {% block body %}
@@ -12,15 +12,15 @@
 				<div class="bg-light p-2 border border-bottom-0 border-top-0 d-flex justify-content-between">
 					<div class="row g-2">
 						<div class="col-6">
-							<input data-action="input->CoveringLetter#update_employer" type="text" class="form-control form-control-sm" placeholder="Employer">
+							<input data-action="input->CoveringLetter#update_employer" type="text" class="form-control form-control-sm" placeholder="{{'Employer'|trans}}">
 						</div>
 						<div class="col-6">
-							<input data-action="input->CoveringLetter#update_companies" type="text" class="form-control form-control-sm" placeholder="Company">
+							<input data-action="input->CoveringLetter#update_companies" type="text" class="form-control form-control-sm" placeholder="{{'Previous Company'|trans}}">
 						</div>
 					</div>
 					<button class="btn btn-sm btn-primary" type="button" data-action="click->CoveringLetter#print_covering_letter">
-						<i class="bi bi-download me-1"></i>
-						Download
+						<i class="bi bi-printer me-1"></i>
+						{{'Print'|trans}}
 					</button>
 				</div>
 			</div>
