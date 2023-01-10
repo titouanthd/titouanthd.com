@@ -26,11 +26,13 @@
 						{{ form_row(registrationForm.plainPassword, { label: 'Password'|trans, attr: {autocomplete: 'username'} }) }}
 						{{ form_row(registrationForm.agreeTerms, { label: 'Agree terms'|trans }) }}
 
-							<div class="row justify-content-between align-items-center"> <div class="col-auto">
+						<div class="row g-2 justify-content-between align-items-center">
+							<div class="col-12">
 								<button type="submit" class="btn btn-primary">{{'Register'|trans}}</button>
 							</div>
-							<div class="col-auto">
-								<a href="{{path('app_login')}}">{{'Log in'|trans}}</a>
+							<div class="col-12">
+								<a href="{{path('app_login')}}" class="me-2">{{'Log in'|trans}}</a>
+								<a href="{{ path('app_home') }}">Back to home</a>
 							</div>
 						</div>
 

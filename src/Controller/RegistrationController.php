@@ -70,7 +70,7 @@ class RegistrationController extends AbstractController
                     ->from(new Address('mailer@titouanthd.com', 'Ti Bot'))
                     ->to($user->getEmail())
                     ->subject('Please Confirm your Email')
-                    ->htmlTemplate('registration/confirmation_email.html.twig')
+                    ->htmlTemplate('emails/confirmation_email.html.twig')
             );
 
             $this->addFlash('success', 'Your account has been created successfully.');

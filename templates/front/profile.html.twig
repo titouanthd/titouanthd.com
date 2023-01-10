@@ -14,7 +14,11 @@
 
 {% block body %}
 	<div class="container header-margin">
-		<h1>{{'User Profile'|trans}}</h1>
-		{{ component('flashes') }}
+	<div class="row">
+		<div class="col-12 my-3">
+			<h1>{{'User Profile'|trans}}</h1>
+			{{ component('flashes') }}
+		</div>
+	</div>
 	</div>
 {% endblock %}

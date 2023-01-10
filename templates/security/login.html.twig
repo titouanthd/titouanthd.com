@@ -1,7 +1,6 @@
 {% extends 'layouts/base.html.twig' %}
 
-{% block title %}Log in!
-{% endblock %}
+{% block title %}{{'Sign in - Titouan Thd'|trans}}{% endblock %}
 
 {% block header %}
 	{# Empty block needed to remove default_header #}
@@ -38,15 +37,17 @@
 								</label>
 							</div>
 
-							<div class="row justify-content-between align-items-center">
-								<div class="col-auto">
+							<div class="row g-2 justify-content-between align-items-center">
+								<div class="col-12">
 									<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
 									<button class="btn btn-primary" type="submit">
 										{{'Sign in'|trans}}
 									</button>
 								</div>
-								<div class="col-auto">
-									<a href="{{ path('app_register') }}">{{'Register'|trans}}</a>
+								<div class="col-12">
+									<a href="{{ path('app_register') }}" class="me-2">{{'Register'|trans}}</a>
+									<a href="{{ path('app_reset_password_request') }}" class="me-2">Reset password</a>
+									<a href="{{ path('app_home') }}" class="me-2">Back to home</a>
 								</div>
 							</div>
 						</form>
