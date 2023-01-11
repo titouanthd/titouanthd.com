@@ -1,0 +1,71 @@
+{% extends 'layouts/admin.html.twig' %}
+
+{% block title %}
+	{{ page_title }}
+{% endblock %}
+
+{% block body %}
+	<div>
+		<h1>{{ page_title }}</h1>
+		<div class="d-flex justify-content-between my-2">
+			<a class="btn btn-sm btn-light" href="{{ path('admin_user_index') }}">
+				<i class="bi bi-arrow-return-left me-1"></i>
+				Back
+			</a>
+			<a class="btn btn-sm btn-secondary" href="{{ path('admin_user_edit', {id: user.id})}}">
+				<i class="bi bi-pencil me-1"></i>
+				Edit
+			</a>
+		</div>
+
+		<div class="overflow-auto">
+			<table class="table table-bordered bg-white mb-0">
+				<tbody>
+					<tr>
+						<th>id</th>
+						<td>{{ user.id }}</td>
+					</tr>
+					<tr>
+						<th>email</th>
+						<td>{{ user.email }}</td>
+					</tr>
+					<tr>
+						<th>pseudo</th>
+						<td>{{ user.pseudo }}</td>
+					</tr>
+					<tr>
+						<th>roles</th>
+						<td>{{ user.roles|json_encode }}</td>
+					</tr>
+					<tr>
+						<th>password</th>
+						<td>{{ user.password }}</td>
+					</tr>
+					<tr>
+						<th>reset_token</th>
+						<td>{{ user.resetToken }}</td>
+					</tr>
+					<tr>
+						<th>created_at</th>
+						<td>{{ user.createdAt ? user.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+					</tr>
+					<tr>
+						<th>updated_at</th>
+						<td>{{ user.updatedAt ? user.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+					</tr>
+					<tr>
+						<th>posts</th>
+						<td>{{ user.posts|serialize('json', { groups: 'post:read'}) }}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="p-2 border border-top-0">
+			<div class="d-flex justify-content-between my-2">
+				{{ include('admin/user/_delete_form.html.twig') }}
+			</div>
+		</div>
+
+	</div>
+{% endblock %}

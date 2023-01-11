@@ -14,11 +14,51 @@
 
 {% block body %}
 	<div class="container header-margin">
-	<div class="row">
-		<div class="col-12 my-3">
-			<h1>{{'User Profile'|trans}}</h1>
-			{{ component('flashes') }}
+		<div class="row">
+			<div class="col-12">
+				<h1 class="my-3">{{'User Profile'|trans}}</h1>
+				{{ component('flashes') }}
+
+				<div class="row">
+					<div class="col-12">
+						<h2>{{'Stored data'|trans}}</h2>
+						<div class="overflow-auto">
+							<table class="table table-bordered table-hovered">
+								<tbody>
+									<tr>
+										<th>id</th>
+										<td>{{ app.user.id }}</td>
+									</tr>
+									<tr>
+										<th>{{ 'email' }}</th>
+										<td>{{ app.user.email }}</td>
+									</tr>
+									<tr>
+										<th>{{ 'pseudo' }}</th>
+										<td>{{ app.user.pseudo }}</td>
+									</tr>
+									<tr>
+										<th>{{ 'roles' }}</th>
+										<td>{{ app.user.roles|json_encode }}</td>
+									</tr>
+									<tr>
+										<th>{{ 'is_verified' }}</th>
+										<td>{{ app.user.isVerified }}</td>
+									</tr>
+									<tr>
+										<th>{{ 'created_at' }}</th>
+										<td>{{ app.user.createdAt|date() }}</td>
+									</tr>
+									<tr>
+										<th>{{ 'updated_at' }}</th>
+										<td>{{ app.user.updatedAt|date() }}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
 	</div>
 {% endblock %}

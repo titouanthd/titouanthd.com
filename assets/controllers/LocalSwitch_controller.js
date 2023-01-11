@@ -1,10 +1,6 @@
 import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
-  connect() {
-    console.log("LocalSwitch controller connected");
-  }
-
   switch(event) {
     // find the current language
     // current language is the first element before / in the url
@@ -12,16 +8,13 @@ export default class extends Controller {
     // if the url is /fr/... then current language is fr
     // if the url is /... then current language is en
     const current_language = window.location.pathname.split("/")[1];
-    console.log("current language is " + current_language);
 
     // from event target, get the language to switch to
     const language_to_switch_to = event.target.dataset.language;
-    console.log("language to switch to is " + language_to_switch_to);
 
     // if the language to switch to is the same as the current language
     // then do nothing
     if (language_to_switch_to === current_language) {
-      console.log("do nothing");
       return;
     }
 

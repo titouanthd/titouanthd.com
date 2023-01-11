@@ -3,11 +3,9 @@
 
 namespace App\Components;
 
-use Symfony\UX\LiveComponent\Attribute\AsLiveComponent;
-use Symfony\UX\LiveComponent\DefaultActionTrait;
+use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 
-#[AsLiveComponent('flashes')]
+#[AsTwigComponent('flashes')]
 class FlashesComponent
 {
-    use DefaultActionTrait;
 }

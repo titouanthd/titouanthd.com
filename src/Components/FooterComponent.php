@@ -1,13 +1,11 @@
 <?php
-// header component
+// footer component
 
 namespace App\Components;
 
-use Symfony\UX\LiveComponent\Attribute\AsLiveComponent;
-use Symfony\UX\LiveComponent\DefaultActionTrait;
+use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 
-#[AsLiveComponent('footer')]
+#[AsTwigComponent('footer')]
 class FooterComponent
 {
-    use DefaultActionTrait;
 }

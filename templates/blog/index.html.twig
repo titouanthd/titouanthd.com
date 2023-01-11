@@ -1,0 +1,21 @@
+{% extends 'layouts/base.html.twig' %}
+
+{% block title %}{{page_title}}{% endblock %}
+
+{% block body %}
+	<img src="https://picsum.photos/1920/450" class="img-fluid" alt="">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 my-3 text-center">
+				<h1>{{'Welcome on my dev cheat sheet !'|trans}}</h1>
+                <p class="font-monospace">{{'Here I talk about web. Just under you can find my latest publication.'}}</p>
+			</div>
+
+            <div class="col-12">
+                <h4>{{ last_post.title }}</h4>
+                <p class="m-0">{{ last_post.created_at|date('d/m/Y H:i') }}</p>
+                <img src="{{ last_post.ft_image }}" class="img-fluid" alt="">
+            </div>
+		</div>
+	</div>
+{% endblock %}

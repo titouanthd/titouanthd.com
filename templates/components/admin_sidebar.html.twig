@@ -1,0 +1,37 @@
+{% set current_path = app.request.get('_route') %}
+<div>
+	<div class="row">
+		<div class="col-auto pe-0">
+			<div class="d-flex flex-column">
+				{# <a href="{{ path('app_home') }}" class="btn btn-sm btn-light mb-1">
+					<i class="bi bi-house"></i>
+				</a> #}
+				<a href="{{ path('admin_index') }}" class="btn btn-sm btn-light mb-1 {% if 'admin_index' in current_path %}active{% endif %}">
+					<i class="bi bi-speedometer2"></i>
+				</a>
+				<a href="{{ path('admin_user_index') }}" class="btn btn-sm btn-light mb-1 {% if 'user' in current_path %}active{% endif %}">
+					<i class="bi bi-person"></i>
+				</a>
+				<a href="{{ path('admin_post_index') }}" class="btn btn-sm btn-light mb-1 {% if 'post' in current_path %}active{% endif %}">
+					<i class="bi bi-file-earmark"></i>
+				</a>
+			</div>
+		</div>
+		<div class="col ps-1 px-0 collapse collapse-horizontal" id="sidebarLabels">
+			<div class="d-flex flex-column align-items-start">
+				{# <a href="{{ path('app_home') }}" class="btn btn-sm btn-light btn-sm btn-light mb-1">
+					<span>Back&nbsp;to&nbsp;site</span>
+				</a> #}
+				<a href="{{ path('admin_index') }}" class="btn btn-sm btn-light btn-sm btn-light mb-1 {% if 'admin_index' in current_path %}active{% endif %}">
+					<span>Dashboard</span>
+				</a>
+				<a href="{{ path('admin_user_index') }}" class="btn btn-sm btn-light btn-sm btn-light mb-1 {% if 'user' in current_path %}active{% endif %}">
+					<span>Users</span>
+				</a>
+				<a href="{{ path('admin_post_index') }}" class="btn btn-sm btn-light btn-sm btn-light mb-1 {% if 'post' in current_path %}active{% endif %}">
+					<span>Post</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

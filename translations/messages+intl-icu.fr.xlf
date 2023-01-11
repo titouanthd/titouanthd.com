@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="Swdmku2" resname="You are already logged in, you can't access this page. If you want to register a new account, please &lt;a href=&quot;/logout&quot;&gt;logout first&lt;/a&gt;.">
+        <source>You are already logged in, you can't access this page. If you want to register a new account, please &lt;a href="/logout"&gt;logout first&lt;/a&gt;.</source>
+        <target><![CDATA[__You are already logged in, you can't access this page. If you want to register a new account, please <a href="/logout">logout first</a>.]]></target>
+      </trans-unit>
+      <trans-unit id="7VXpCSW" resname="If your email is in our database, you will receive an email to reset your password.">
+        <source>If your email is in our database, you will receive an email to reset your password.</source>
+        <target>__If your email is in our database, you will receive an email to reset your password.</target>
+      </trans-unit>
+      <trans-unit id="eDr70RE" resname="Your password has been reset.">
+        <source>Your password has been reset.</source>
+        <target>__Your password has been reset.</target>
+      </trans-unit>
+      <trans-unit id="sDy.A4z" resname="This token is not valid.">
+        <source>This token is not valid.</source>
+        <target>__This token is not valid.</target>
+      </trans-unit>
+      <trans-unit id="tOkp2Lz" resname="Documents">
+        <source>Documents</source>
+        <target>__Documents</target>
+      </trans-unit>
+      <trans-unit id="8oWsVMv" resname="My CV">
+        <source>My CV</source>
+        <target>__My CV</target>
+      </trans-unit>
+      <trans-unit id="19zV8CV" resname="My Covering letter">
+        <source>My Covering letter</source>
+        <target>__My Covering letter</target>
+      </trans-unit>
+      <trans-unit id="cZU1Ziu" resname="Blog categories">
+        <source>Blog categories</source>
+        <target>__Blog categories</target>
+      </trans-unit>
+      <trans-unit id="joHF8w0" resname="Helpfull links">
+        <source>Helpfull links</source>
+        <target>__Helpfull links</target>
+      </trans-unit>
+      <trans-unit id="K1w9JnI" resname="Contact">
+        <source>Contact</source>
+        <target>__Contact</target>
+      </trans-unit>
+      <trans-unit id="ukRc.zi" resname="Privacy policy">
+        <source>Privacy policy</source>
+        <target>__Privacy policy</target>
+      </trans-unit>
+      <trans-unit id="EBGzqBH" resname="Legal notice">
+        <source>Legal notice</source>
+        <target>__Legal notice</target>
+      </trans-unit>
+      <trans-unit id="_sg1aBE" resname="Subscribe to my newsletter">
+        <source>Subscribe to my newsletter</source>
+        <target>__Subscribe to my newsletter</target>
+      </trans-unit>
+      <trans-unit id="kp0qdOs" resname="Stay aware. Be notified when I create something new and/or usefull.">
+        <source>Stay aware. Be notified when I create something new and/or usefull.</source>
+        <target>__Stay aware. Be notified when I create something new and/or usefull.</target>
+      </trans-unit>
+      <trans-unit id="8kiP1O9" resname="Email address">
+        <source>Email address</source>
+        <target>__Email address</target>
+      </trans-unit>
+      <trans-unit id="zA442px" resname="Subscribe">
+        <source>Subscribe</source>
+        <target>__Subscribe</target>
+      </trans-unit>
+      <trans-unit id="K1jr9g." resname="© 2022 Company, Inc. All rights reserved.">
+        <source>© 2022 Company, Inc. All rights reserved.</source>
+        <target>__© 2022 Company, Inc. All rights reserved.</target>
+      </trans-unit>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target>__Home</target>
+      </trans-unit>
+      <trans-unit id="pP5lJk7" resname="Language">
+        <source>Language</source>
+        <target>__Language</target>
+      </trans-unit>
+      <trans-unit id="dFgZn_l" resname="French">
+        <source>French</source>
+        <target>__French</target>
+      </trans-unit>
+      <trans-unit id="uhGL9.y" resname="English">
+        <source>English</source>
+        <target>__English</target>
+      </trans-unit>
+      <trans-unit id="1pajW90" resname="Profile">
+        <source>Profile</source>
+        <target>__Profile</target>
+      </trans-unit>
+      <trans-unit id="SWFhRVF" resname="Log out">
+        <source>Log out</source>
+        <target>__Log out</target>
+      </trans-unit>
+      <trans-unit id="v9QCsvb" resname="Sign in">
+        <source>Sign in</source>
+        <target>__Sign in</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ" resname="Register">
+        <source>Register</source>
+        <target>__Register</target>
+      </trans-unit>
+      <trans-unit id="S7BxAyM" resname="Hi! you ask me to reset your password !">
+        <source>Hi! you ask me to reset your password !</source>
+        <target>__Hi! you ask me to reset your password !</target>
+      </trans-unit>
+      <trans-unit id="i_RS4pa" resname="You can reset your password by clicking on the link below:">
+        <source>You can reset your password by clicking on the link below:</source>
+        <target>__You can reset your password by clicking on the link below:</target>
+      </trans-unit>
+      <trans-unit id="RTdX5L1" resname="Reset password link">
+        <source>Reset password link</source>
+        <target>__Reset password link</target>
+      </trans-unit>
+      <trans-unit id="GqexwdX" resname="Thanks!">
+        <source>Thanks!</source>
+        <target>__Thanks!</target>
+      </trans-unit>
+      <trans-unit id="SpdNrYZ" resname="Full-stack web developer based in Annecy - Titouan Thd">
+        <source>Full-stack web developer based in Annecy - Titouan Thd</source>
+        <target>__Full-stack web developer based in Annecy - Titouan Thd</target>
+      </trans-unit>
+      <trans-unit id="Gfeh.KK" resname="Hello, my name is Titouan and I'm a full-stack web developer based in France.">
+        <source>Hello, my name is Titouan and I'm a full-stack web developer based in France.</source>
+        <target>__Hello, my name is Titouan and I'm a full-stack web developer based in France.</target>
+      </trans-unit>
+      <trans-unit id="7nSz3J6" resname="&lt;p class=&quot;font-monospace&quot;&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;Hello, my name is Titouan Thebaud and&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;strong&gt;I'm a passionate and self-taught full-stack web developer.&lt;/strong&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).&lt;br&gt;&lt;br&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;b&gt;I'm constantly learning new development methodstrans&lt;/b&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;to offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.trans&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;br&gt;&lt;br&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;I particularly enjoy using AI and blockchain to create the web of tomorrow. I'm also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.trans&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/p&gt;">
+        <source>&lt;p class="font-monospace"&gt;
+							Hello, my name is Titouan Thebaud and
+							&lt;strong&gt;I'm a passionate and self-taught full-stack web developer.&lt;/strong&gt;
+							I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).&lt;br&gt;&lt;br&gt;
+							&lt;b&gt;I'm constantly learning new development methodstrans&lt;/b&gt;
+							to offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.trans
+							&lt;br&gt;&lt;br&gt;
+							I particularly enjoy using AI and blockchain to create the web of tomorrow. I'm also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.trans
+						&lt;/p&gt;</source>
+        <target><![CDATA[__<p class="font-monospace">
+							Hello, my name is Titouan Thebaud and
+							<strong>I'm a passionate and self-taught full-stack web developer.</strong>
+							I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).<br><br>
+							<b>I'm constantly learning new development methodstrans</b>
+							to offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.trans
+							<br><br>
+							I particularly enjoy using AI and blockchain to create the web of tomorrow. I'm also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.trans
+						</p>]]></target>
+      </trans-unit>
+      <trans-unit id="3L9.MQH" resname="Latest posts">
+        <source>Latest posts</source>
+        <target>__Latest posts</target>
+      </trans-unit>
+      <trans-unit id="zJXVzov" resname="Covering Letter as a full-stack web developer - Titouan Thd">
+        <source>Covering Letter as a full-stack web developer - Titouan Thd</source>
+        <target>__Covering Letter as a full-stack web developer - Titouan Thd</target>
+      </trans-unit>
+      <trans-unit id="VKO2TGf" resname="Employer">
+        <source>Employer</source>
+        <target>__Employer</target>
+      </trans-unit>
+      <trans-unit id="lOz60MS" resname="Previous Company">
+        <source>Previous Company</source>
+        <target>__Previous Company</target>
+      </trans-unit>
+      <trans-unit id="3w.nmJj" resname="Print">
+        <source>Print</source>
+        <target>__Print</target>
+      </trans-unit>
+      <trans-unit id="NYZwm4L" resname="CV as a full-stack web developer - Titouan Thd">
+        <source>CV as a full-stack web developer - Titouan Thd</source>
+        <target>__CV as a full-stack web developer - Titouan Thd</target>
+      </trans-unit>
+      <trans-unit id="1ur_gjW" resname="Download">
+        <source>Download</source>
+        <target>__Download</target>
+      </trans-unit>
+      <trans-unit id="R6D1gmK" resname="Short version">
+        <source>Short version</source>
+        <target>__Short version</target>
+      </trans-unit>
+      <trans-unit id="Mtf9cRV" resname="Full version">
+        <source>Full version</source>
+        <target>__Full version</target>
+      </trans-unit>
+      <trans-unit id="AkKPUDA" resname="Application for the position of full-stack web developer">
+        <source>Application for the position of full-stack web developer</source>
+        <target>__Application for the position of full-stack web developer</target>
+      </trans-unit>
+      <trans-unit id="WTDXZ9p" resname="&lt;p&gt;Dear &lt;span data-CoveringLetter-target=&quot;employer&quot;&gt;[Employer]&lt;/span&gt;,&lt;/p&gt;&#10;    &lt;p&gt;I am writing to apply for the position of Full Stack Web Developer at &lt;span data-CoveringLetter-target=&quot;companies&quot;&gt;[Previous Company]&lt;/span&gt;. As a highly skilled and passionate developer with experience in both front-end and back-end technologies, I am confident in my ability to contribute to the success of your team.&lt;/p&gt;&#10;    &lt;p&gt;During my previous experiences, I have acquired skills in developing responsive and user-friendly websites and web applications using a variety of technologies, including HTML, CSS, JavaScript, and PHP. I have also worked on integrating these applications with RESTful APIs and database systems, as well as implementing security and authentication measures to protect sensitive data.&lt;/p&gt;&#10;    &lt;p&gt;In addition to my technical skills, I have strong problem-solving and communication abilities, and I enjoy collaborating with cross-functional teams to identify and address business needs. I am excited about the opportunity to join your team and bring my skills and experience to help drive the development of innovative web solutions at &lt;span data-CoveringLetter-target=&quot;companies&quot;&gt;[Previous Company]&lt;/span&gt;.&lt;/p&gt;&#10;    &lt;p&gt;Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experience can contribute to the success of your team.&lt;/p&gt;&#10;    &lt;p&gt;Sincerely,&lt;br&gt;&#10;    Titouan Thébaud&lt;/p&gt;">
+        <source>&lt;p&gt;Dear &lt;span data-CoveringLetter-target="employer"&gt;[Employer]&lt;/span&gt;,&lt;/p&gt;
+    &lt;p&gt;I am writing to apply for the position of Full Stack Web Developer at &lt;span data-CoveringLetter-target="companies"&gt;[Previous Company]&lt;/span&gt;. As a highly skilled and passionate developer with experience in both front-end and back-end technologies, I am confident in my ability to contribute to the success of your team.&lt;/p&gt;
+    &lt;p&gt;During my previous experiences, I have acquired skills in developing responsive and user-friendly websites and web applications using a variety of technologies, including HTML, CSS, JavaScript, and PHP. I have also worked on integrating these applications with RESTful APIs and database systems, as well as implementing security and authentication measures to protect sensitive data.&lt;/p&gt;
+    &lt;p&gt;In addition to my technical skills, I have strong problem-solving and communication abilities, and I enjoy collaborating with cross-functional teams to identify and address business needs. I am excited about the opportunity to join your team and bring my skills and experience to help drive the development of innovative web solutions at &lt;span data-CoveringLetter-target="companies"&gt;[Previous Company]&lt;/span&gt;.&lt;/p&gt;
+    &lt;p&gt;Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experience can contribute to the success of your team.&lt;/p&gt;
+    &lt;p&gt;Sincerely,&lt;br&gt;
+    Titouan Thébaud&lt;/p&gt;</source>
+        <target><![CDATA[__<p>Dear <span data-CoveringLetter-target="employer">[Employer]</span>,</p>
+    <p>I am writing to apply for the position of Full Stack Web Developer at <span data-CoveringLetter-target="companies">[Previous Company]</span>. As a highly skilled and passionate developer with experience in both front-end and back-end technologies, I am confident in my ability to contribute to the success of your team.</p>
+    <p>During my previous experiences, I have acquired skills in developing responsive and user-friendly websites and web applications using a variety of technologies, including HTML, CSS, JavaScript, and PHP. I have also worked on integrating these applications with RESTful APIs and database systems, as well as implementing security and authentication measures to protect sensitive data.</p>
+    <p>In addition to my technical skills, I have strong problem-solving and communication abilities, and I enjoy collaborating with cross-functional teams to identify and address business needs. I am excited about the opportunity to join your team and bring my skills and experience to help drive the development of innovative web solutions at <span data-CoveringLetter-target="companies">[Previous Company]</span>.</p>
+    <p>Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experience can contribute to the success of your team.</p>
+    <p>Sincerely,<br>
+    Titouan Thébaud</p>]]></target>
+      </trans-unit>
+      <trans-unit id="JP.te9I" resname="Contact me">
+        <source>Contact me</source>
+        <target>__Contact me</target>
+      </trans-unit>
+      <trans-unit id="iYIZB4c" resname="My favorite tools">
+        <source>My favorite tools</source>
+        <target>__My favorite tools</target>
+      </trans-unit>
+      <trans-unit id="351a_Mg" resname="Language skills">
+        <source>Language skills</source>
+        <target>__Language skills</target>
+      </trans-unit>
+      <trans-unit id="NBEFnLj" resname="Spanish">
+        <source>Spanish</source>
+        <target>__Spanish</target>
+      </trans-unit>
+      <trans-unit id="bGd50Sa" resname="Titouan Thebaud">
+        <source>Titouan Thebaud</source>
+        <target>__Titouan Thebaud</target>
+      </trans-unit>
+      <trans-unit id="v8lM_HJ" resname="Full-Stack web developper">
+        <source>Full-Stack web developper</source>
+        <target>__Full-Stack web developper</target>
+      </trans-unit>
+      <trans-unit id="kBGol4O" resname="Hello, my name is Titouan Thebaud and I am a 27 years old passionate and self-taught full-stack web developer. I am looking for the next opportunity that will take me to the next level as a developer.">
+        <source>Hello, my name is Titouan Thebaud and I am a 27 years old passionate and self-taught full-stack web developer. I am looking for the next opportunity that will take me to the next level as a developer.</source>
+        <target>__Hello, my name is Titouan Thebaud and I am a 27 years old passionate and self-taught full-stack web developer. I am looking for the next opportunity that will take me to the next level as a developer.</target>
+      </trans-unit>
+      <trans-unit id="TTCL0oX" resname="Professional experiences">
+        <source>Professional experiences</source>
+        <target>__Professional experiences</target>
+      </trans-unit>
+      <trans-unit id="N3ggeqf" resname="Full-stack web developer">
+        <source>Full-stack web developer</source>
+        <target>__Full-stack web developer</target>
+      </trans-unit>
+      <trans-unit id="hUFZYMV" resname="June 2017 - Today . 5 years and 8 mounths">
+        <source>June 2017 - Today . 5 years and 8 mounths</source>
+        <target>__June 2017 - Today . 5 years and 8 mounths</target>
+      </trans-unit>
+      <trans-unit id="kLW7hos" resname="Project management (landing page, dynamic and e-commerce) from the specification to the production.">
+        <source>Project management (landing page, dynamic and e-commerce) from the specification to the production.</source>
+        <target>__Project management (landing page, dynamic and e-commerce) from the specification to the production.</target>
+      </trans-unit>
+      <trans-unit id="4_rMMW." resname="Optimization of natural referencing and performance (caching, minification, image conversion...) of WordPress site">
+        <source>Optimization of natural referencing and performance (caching, minification, image conversion...) of WordPress site</source>
+        <target>__Optimization of natural referencing and performance (caching, minification, image conversion...) of WordPress site</target>
+      </trans-unit>
+      <trans-unit id="61y.SHj" resname="Creation of WordPress Themes &amp; Plugins for several objectives (custom blocks, admin pages...)">
+        <source>Creation of WordPress Themes &amp; Plugins for several objectives (custom blocks, admin pages...)</source>
+        <target><![CDATA[__Creation of WordPress Themes & Plugins for several objectives (custom blocks, admin pages...)]]></target>
+      </trans-unit>
+      <trans-unit id="_E0sQ3l" resname="Back-end developer">
+        <source>Back-end developer</source>
+        <target>__Back-end developer</target>
+      </trans-unit>
+      <trans-unit id="zriKdC." resname="June 2021 - December 2022 . 1 year and 7 mounths">
+        <source>June 2021 - December 2022 . 1 year and 7 mounths</source>
+        <target>__June 2021 - December 2022 . 1 year and 7 mounths</target>
+      </trans-unit>
+      <trans-unit id="tK559uK" resname="Creation of a wordpress plugin to replace google analytics">
+        <source>Creation of a wordpress plugin to replace google analytics</source>
+        <target>__Creation of a wordpress plugin to replace google analytics</target>
+      </trans-unit>
+      <trans-unit id="jf_qAr7" resname="Creation of php/sql scripts to automate database manipulation (migration, update,save...)">
+        <source>Creation of php/sql scripts to automate database manipulation (migration, update,save...)</source>
+        <target>__Creation of php/sql scripts to automate database manipulation (migration, update,save...)</target>
+      </trans-unit>
+      <trans-unit id="se891mF" resname="Creation of SPA with Vue.js and REST API">
+        <source>Creation of SPA with Vue.js and REST API</source>
+        <target>__Creation of SPA with Vue.js and REST API</target>
+      </trans-unit>
+      <trans-unit id="AnnsUgD" resname="Javascripts and CSS optimisation">
+        <source>Javascripts and CSS optimisation</source>
+        <target>__Javascripts and CSS optimisation</target>
+      </trans-unit>
+      <trans-unit id="OauSBBK" resname="User Profile - Titouan Thd">
+        <source>User Profile - Titouan Thd</source>
+        <target>__User Profile - Titouan Thd</target>
+      </trans-unit>
+      <trans-unit id="7nZy4sF" resname="User Profile">
+        <source>User Profile</source>
+        <target>__User Profile</target>
+      </trans-unit>
+      <trans-unit id="QMhIQgQ" resname="Welcome on my website - Titouan Thd">
+        <source>Welcome on my website - Titouan Thd</source>
+        <target>__Welcome on my website - Titouan Thd</target>
+      </trans-unit>
+      <trans-unit id="JdMQYRa" resname="Please register">
+        <source>Please register</source>
+        <target>__Please register</target>
+      </trans-unit>
+      <trans-unit id="lpzL089" resname="Email">
+        <source>Email</source>
+        <target>__Email</target>
+      </trans-unit>
+      <trans-unit id="588_9PF" resname="Password">
+        <source>Password</source>
+        <target>__Password</target>
+      </trans-unit>
+      <trans-unit id="c1prjRW" resname="Agree terms">
+        <source>Agree terms</source>
+        <target>__Agree terms</target>
+      </trans-unit>
+      <trans-unit id="wYmEDPf" resname="Log in">
+        <source>Log in</source>
+        <target>__Log in</target>
+      </trans-unit>
+      <trans-unit id="NhylKWc" resname="Sign in - Titouan Thd">
+        <source>Sign in - Titouan Thd</source>
+        <target>__Sign in - Titouan Thd</target>
+      </trans-unit>
+      <trans-unit id="dDUw20Q" resname="Please sign in">
+        <source>Please sign in</source>
+        <target>__Please sign in</target>
+      </trans-unit>
+      <trans-unit id="_TJnqhH" resname="Remember me">
+        <source>Remember me</source>
+        <target>__Remember me</target>
+      </trans-unit>
+      <trans-unit id="NEqC3Z8" resname="Reset password - Titouan Thd">
+        <source>Reset password - Titouan Thd</source>
+        <target>__Reset password - Titouan Thd</target>
+      </trans-unit>
+      <trans-unit id="4O3_s6c" resname="Reset password">
+        <source>Reset password</source>
+        <target>__Reset password</target>
+      </trans-unit>
+      <trans-unit id="FV_BbAQ" resname="Submit">
+        <source>Submit</source>
+        <target>__Submit</target>
+      </trans-unit>
+      <trans-unit id="PjgG.xc" resname="Back to login">
+        <source>Back to login</source>
+        <target>__Back to login</target>
+      </trans-unit>
+      <trans-unit id="c.LEwIG" resname="Reset password request - Titouan Thd">
+        <source>Reset password request - Titouan Thd</source>
+        <target>__Reset password request - Titouan Thd</target>
+      </trans-unit>
+      <trans-unit id="GPJjo3S" resname="Reset password request">
+        <source>Reset password request</source>
+        <target>__Reset password request</target>
+      </trans-unit>
+      <trans-unit id="dsVQX.L" resname="Back to home">
+        <source>Back to home</source>
+        <target>__Back to home</target>
+      </trans-unit>
+      <trans-unit id="KU01.Zc" resname="Business developer">
+        <source>Business developer</source>
+        <target>__Business developer</target>
+      </trans-unit>
+      <trans-unit id="mmPyNCN" resname="October 2018 - April 2019 . 7 mounths">
+        <source>October 2018 - April 2019 . 7 mounths</source>
+        <target>__October 2018 - April 2019 . 7 mounths</target>
+      </trans-unit>
+      <trans-unit id="MFkZ5sD" resname="Creation of a customer portfolio">
+        <source>Creation of a customer portfolio</source>
+        <target>__Creation of a customer portfolio</target>
+      </trans-unit>
+      <trans-unit id="GZXiU4W" resname="Acquisition through marketing automation">
+        <source>Acquisition through marketing automation</source>
+        <target>__Acquisition through marketing automation</target>
+      </trans-unit>
+      <trans-unit id="Y7RgFer" resname="Webinar and video conference animation">
+        <source>Webinar and video conference animation</source>
+        <target>__Webinar and video conference animation</target>
+      </trans-unit>
+      <trans-unit id="LVceGdq" resname="Sales assistant">
+        <source>Sales assistant</source>
+        <target>__Sales assistant</target>
+      </trans-unit>
+      <trans-unit id="oe.ZVt9" resname="November 2017 - October 2018 . 1 year and 1 mounths">
+        <source>November 2017 - October 2018 . 1 year and 1 mounths</source>
+        <target>__November 2017 - October 2018 . 1 year and 1 mounths</target>
+      </trans-unit>
+      <trans-unit id="NVC8I11" resname="Implementation of new processes for the sales team (photo booth, online cross platform selling for second hand)">
+        <source>Implementation of new processes for the sales team (photo booth, online cross platform selling for second hand)</source>
+        <target>__Implementation of new processes for the sales team (photo booth, online cross platform selling for second hand)</target>
+      </trans-unit>
+      <trans-unit id="ovznw.a" resname="Customer care &amp; support">
+        <source>Customer care &amp; support</source>
+        <target><![CDATA[__Customer care & support]]></target>
+      </trans-unit>
+      <trans-unit id="eLBbfCk" resname="Sale and follow-up of motorcycle insurance contracts">
+        <source>Sale and follow-up of motorcycle insurance contracts</source>
+        <target>__Sale and follow-up of motorcycle insurance contracts</target>
+      </trans-unit>
+      <trans-unit id="4FyLB8B" resname="February 2017 - November 2017 . 10 mounths">
+        <source>February 2017 - November 2017 . 10 mounths</source>
+        <target>__February 2017 - November 2017 . 10 mounths</target>
+      </trans-unit>
+      <trans-unit id="gjb5DKg" resname="Creation of the agency's website with WordPress">
+        <source>Creation of the agency's website with WordPress</source>
+        <target>__Creation of the agency's website with WordPress</target>
+      </trans-unit>
+      <trans-unit id="SYxqdHb" resname="Implementation of commercial operations (distribution of flyers, telephone and online canvassing)">
+        <source>Implementation of commercial operations (distribution of flyers, telephone and online canvassing)</source>
+        <target>__Implementation of commercial operations (distribution of flyers, telephone and online canvassing)</target>
+      </trans-unit>
+      <trans-unit id="fP8a1SI" resname="Customer reception, visit of property">
+        <source>Customer reception, visit of property</source>
+        <target>__Customer reception, visit of property</target>
+      </trans-unit>
+      <trans-unit id="Yb8JjPr" resname="Sergeant - Aircraft Mechanics">
+        <source>Sergeant - Aircraft Mechanics</source>
+        <target>__Sergeant - Aircraft Mechanics</target>
+      </trans-unit>
+      <trans-unit id="duFI1WT" resname="February 2015 - February 2017 . 2 years">
+        <source>February 2015 - February 2017 . 2 years</source>
+        <target>__February 2015 - February 2017 . 2 years</target>
+      </trans-unit>
+      <trans-unit id="wEA6SHT" resname="Training &amp; Education">
+        <source>Training &amp; Education</source>
+        <target><![CDATA[__Training & Education]]></target>
+      </trans-unit>
+      <trans-unit id="uvxnI_o" resname="Bachelor Communication and Web Marketing">
+        <source>Bachelor Communication and Web Marketing</source>
+        <target>__Bachelor Communication and Web Marketing</target>
+      </trans-unit>
+      <trans-unit id="C4vHg8l" resname="September 2018 - June 2019 . 1 years">
+        <source>September 2018 - June 2019 . 1 years</source>
+        <target>__September 2018 - June 2019 . 1 years</target>
+      </trans-unit>
+      <trans-unit id="JaaEDVu" resname="Titre II, Communication numérique - multimédia">
+        <source>Titre II, Communication numérique - multimédia</source>
+        <target>__Titre II, Communication numérique - multimédia</target>
+      </trans-unit>
+      <trans-unit id="sXHxEMh" resname="Learning of content creation/management tools (PhotoShop, Illustrator, WordPress...)">
+        <source>Learning of content creation/management tools (PhotoShop, Illustrator, WordPress...)</source>
+        <target>__Learning of content creation/management tools (PhotoShop, Illustrator, WordPress...)</target>
+      </trans-unit>
+      <trans-unit id="qFVbTYn" resname="Use of different digital communication channels (social networks, emailing, search engine advertising...)">
+        <source>Use of different digital communication channels (social networks, emailing, search engine advertising...)</source>
+        <target>__Use of different digital communication channels (social networks, emailing, search engine advertising...)</target>
+      </trans-unit>
+      <trans-unit id="h1gnsuP" resname="Professional training for sales assistants">
+        <source>Professional training for sales assistants</source>
+        <target>__Professional training for sales assistants</target>
+      </trans-unit>
+      <trans-unit id="MyNuGR0" resname="September 2017 - June 2018 . 1 years">
+        <source>September 2017 - June 2018 . 1 years</source>
+        <target>__September 2017 - June 2018 . 1 years</target>
+      </trans-unit>
+      <trans-unit id="fCS5MNt" resname="Title III, Sales techniques and sales operations">
+        <source>Title III, Sales techniques and sales operations</source>
+        <target>__Title III, Sales techniques and sales operations</target>
+      </trans-unit>
+      <trans-unit id="0HWH.eU" resname="Learning of sales techniques, canvassing and customer follow-up">
+        <source>Learning of sales techniques, canvassing and customer follow-up</source>
+        <target>__Learning of sales techniques, canvassing and customer follow-up</target>
+      </trans-unit>
+      <trans-unit id="EKpRINW" resname="Learning of the Office suite (Excel, PPT...)">
+        <source>Learning of the Office suite (Excel, PPT...)</source>
+        <target>__Learning of the Office suite (Excel, PPT...)</target>
+      </trans-unit>
+      <trans-unit id="tGEiAMP" resname="Technical certificate of 1st level, Military">
+        <source>Technical certificate of 1st level, Military</source>
+        <target>__Technical certificate of 1st level, Military</target>
+      </trans-unit>
+      <trans-unit id="6Nt53l9" resname="September 2015 - May 2016 . 8 months">
+        <source>September 2015 - May 2016 . 8 months</source>
+        <target>__September 2015 - May 2016 . 8 months</target>
+      </trans-unit>
+      <trans-unit id="6gq3AZb" resname="Validation of TOEIC level B1 (ability to speak English)">
+        <source>Validation of TOEIC level B1 (ability to speak English)</source>
+        <target>__Validation of TOEIC level B1 (ability to speak English)</target>
+      </trans-unit>
+      <trans-unit id="r_TjuXZ" resname="Learning of the military discipline">
+        <source>Learning of the military discipline</source>
+        <target>__Learning of the military discipline</target>
+      </trans-unit>
+      <trans-unit id="9fegUFE" resname="Command training as a team leader">
+        <source>Command training as a team leader</source>
+        <target>__Command training as a team leader</target>
+      </trans-unit>
+      <trans-unit id="7rhx1uh" resname="Scientific Baccalaureate">
+        <source>Scientific Baccalaureate</source>
+        <target>__Scientific Baccalaureate</target>
+      </trans-unit>
+      <trans-unit id="7BkwJml" resname="Ambroise Croizat high school">
+        <source>Ambroise Croizat high school</source>
+        <target>__Ambroise Croizat high school</target>
+      </trans-unit>
+      <trans-unit id="5_1JOuK" resname="Jully 2014">
+        <source>Jully 2014</source>
+        <target>__Jully 2014</target>
+      </trans-unit>
+      <trans-unit id="b1fjciG" resname="Outside of work">
+        <source>Outside of work</source>
+        <target>__Outside of work</target>
+      </trans-unit>
+      <trans-unit id=".ChKGRO" resname="In my free time, I enjoy learning and improving my skills by working on personal projects and hobbies. I also value spending time with my loved ones, whether it be with my family or friends. I have a passion for travel and exploring different cultures. I find great joy in discovering new places and learning about the history and customs of different parts of the world.">
+        <source>In my free time, I enjoy learning and improving my skills by working on personal projects and hobbies. I also value spending time with my loved ones, whether it be with my family or friends. I have a passion for travel and exploring different cultures. I find great joy in discovering new places and learning about the history and customs of different parts of the world.</source>
+        <target>__In my free time, I enjoy learning and improving my skills by working on personal projects and hobbies. I also value spending time with my loved ones, whether it be with my family or friends. I have a passion for travel and exploring different cultures. I find great joy in discovering new places and learning about the history and customs of different parts of the world.</target>
+      </trans-unit>
+      <trans-unit id="SKAlJBK" resname="Your account is not verified. Please check your email to verify your account.">
+        <source>Your account is not verified. Please check your email to verify your account.</source>
+        <target>__Your account is not verified. Please check your email to verify your account.</target>
+      </trans-unit>
+      <trans-unit id="kAhS3ny" resname="Resend verification email">
+        <source>Resend verification email</source>
+        <target>__Resend verification email</target>
+      </trans-unit>
+      <trans-unit id="vSTb9IR" resname="Hi! Please confirm your email!">
+        <source>Hi! Please confirm your email!</source>
+        <target>__Hi! Please confirm your email!</target>
+      </trans-unit>
+      <trans-unit id="Ry3Xo6w" resname="Please confirm your email address by clicking the following link:">
+        <source>Please confirm your email address by clicking the following link:</source>
+        <target>__Please confirm your email address by clicking the following link:</target>
+      </trans-unit>
+      <trans-unit id="ITaQX9q" resname="Confirm my Email">
+        <source>Confirm my Email</source>
+        <target>__Confirm my Email</target>
+      </trans-unit>
+      <trans-unit id="87wG9uu" resname="This link will expire in">
+        <source>This link will expire in</source>
+        <target>__This link will expire in</target>
+      </trans-unit>
+      <trans-unit id="F7WctIl" resname="Cheers!">
+        <source>Cheers!</source>
+        <target>__Cheers!</target>
+      </trans-unit>
+      <trans-unit id="hpWlheT" resname="Please Confirm your Email">
+        <source>Please Confirm your Email</source>
+        <target>__Please Confirm your Email</target>
+      </trans-unit>
+      <trans-unit id="jWgXnf." resname="A new verification link has been sent to your email address.">
+        <source>A new verification link has been sent to your email address.</source>
+        <target>__A new verification link has been sent to your email address.</target>
+      </trans-unit>
+      <trans-unit id="LMl39ie" resname="&lt;p class=&quot;font-monospace&quot;&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;Hello, my name is Titouan Thebaud and&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;strong&gt;I'm a passionate and self-taught full-stack web developer.&lt;/strong&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).&lt;br&gt;&lt;br&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;b&gt;I'm constantly learning new development methods&lt;/b&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;to offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;br&gt;&lt;br&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;I particularly enjoy using AI and blockchain to create the web of tomorrow. I'm also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/p&gt;">
+        <source>&lt;p class="font-monospace"&gt;
+							Hello, my name is Titouan Thebaud and
+							&lt;strong&gt;I'm a passionate and self-taught full-stack web developer.&lt;/strong&gt;
+							I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).&lt;br&gt;&lt;br&gt;
+							&lt;b&gt;I'm constantly learning new development methods&lt;/b&gt;
+							to offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.
+							&lt;br&gt;&lt;br&gt;
+							I particularly enjoy using AI and blockchain to create the web of tomorrow. I'm also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.
+						&lt;/p&gt;</source>
+        <target><![CDATA[__<p class="font-monospace">
+							Hello, my name is Titouan Thebaud and
+							<strong>I'm a passionate and self-taught full-stack web developer.</strong>
+							I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).<br><br>
+							<b>I'm constantly learning new development methods</b>
+							to offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.
+							<br><br>
+							I particularly enjoy using AI and blockchain to create the web of tomorrow. I'm also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.
+						</p>]]></target>
+      </trans-unit>
+      <trans-unit id="tUKa_vX" resname="Stored data">
+        <source>Stored data</source>
+        <target>__Stored data</target>
+      </trans-unit>
+      <trans-unit id="giREF.l" resname="email">
+        <source>email</source>
+        <target>__email</target>
+      </trans-unit>
+      <trans-unit id="4LcUv5A" resname="pseudo">
+        <source>pseudo</source>
+        <target>__pseudo</target>
+      </trans-unit>
+      <trans-unit id="Zs9VE7N" resname="roles">
+        <source>roles</source>
+        <target>__roles</target>
+      </trans-unit>
+      <trans-unit id="niLdBWq" resname="is_verified">
+        <source>is_verified</source>
+        <target>__is_verified</target>
+      </trans-unit>
+      <trans-unit id="Zvf_lGX" resname="Welcome on my dev cheat sheet !">
+        <source>Welcome on my dev cheat sheet !</source>
+        <target>__Welcome on my dev cheat sheet !</target>
+      </trans-unit>
+      <trans-unit id="jGvAmVN" resname="Blog">
+        <source>Blog</source>
+        <target>__Blog</target>
+      </trans-unit>
+      <trans-unit id="aq2sLyt" resname="Go back">
+        <source>Go back</source>
+        <target>__Go back</target>
+      </trans-unit>
+      <trans-unit id="R62.idG" resname="&lt;p class=&quot;font-monospace&quot;&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;On internet I'm known as &lt;strong&gt;titouanthd&lt;/strong&gt; and &#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).&lt;br&gt;&lt;br&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;b&gt;I'm constantly learning new development methods&lt;/b&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;to offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;br&gt;&lt;br&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;I particularly enjoy using AI and blockchain to create the web of tomorrow. I'm also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/p&gt;">
+        <source>&lt;p class="font-monospace"&gt;
+							On internet I'm known as &lt;strong&gt;titouanthd&lt;/strong&gt; and 
+							I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).&lt;br&gt;&lt;br&gt;
+							&lt;b&gt;I'm constantly learning new development methods&lt;/b&gt;
+							to offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.
+							&lt;br&gt;&lt;br&gt;
+							I particularly enjoy using AI and blockchain to create the web of tomorrow. I'm also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.
+						&lt;/p&gt;</source>
+        <target><![CDATA[__<p class="font-monospace">
+							On internet I'm known as <strong>titouanthd</strong> and 
+							I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).<br><br>
+							<b>I'm constantly learning new development methods</b>
+							to offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.
+							<br><br>
+							I particularly enjoy using AI and blockchain to create the web of tomorrow. I'm also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.
+						</p>]]></target>
+      </trans-unit>
+      <trans-unit id="IDg1N6K" resname="Welcome to backend - Titouan Thd">
+        <source>Welcome to backend - Titouan Thd</source>
+        <target>__Welcome to backend - Titouan Thd</target>
+      </trans-unit>
+      <trans-unit id="u772bQJ" resname="&lt;p class=&quot;font-monospace&quot;&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;On internet I'm known as &lt;strong&gt;titouanthd&lt;/strong&gt; and &#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).&lt;br&gt;&lt;br&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;b&gt;I'm constantly learning new development methods&lt;/b&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;to offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;br&gt;&lt;br&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;I particularly &lt;strong&gt;enjoy using AI and blockchain to create the web of tomorrow&lt;/strong&gt;. I'm also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/p&gt;">
+        <source>&lt;p class="font-monospace"&gt;
+							On internet I'm known as &lt;strong&gt;titouanthd&lt;/strong&gt; and 
+							I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).&lt;br&gt;&lt;br&gt;
+							&lt;b&gt;I'm constantly learning new development methods&lt;/b&gt;
+							to offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.
+							&lt;br&gt;&lt;br&gt;
+							I particularly &lt;strong&gt;enjoy using AI and blockchain to create the web of tomorrow&lt;/strong&gt;. I'm also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.
+						&lt;/p&gt;</source>
+        <target><![CDATA[__<p class="font-monospace">
+							On internet I'm known as <strong>titouanthd</strong> and 
+							I have been working as an independent developer for the past 6 years for companies around the world (always working remotely).<br><br>
+							<b>I'm constantly learning new development methods</b>
+							to offer solutions that are always better suited to our projects. My ambition is to create something that could transform the daily lives of developers.
+							<br><br>
+							I particularly <strong>enjoy using AI and blockchain to create the web of tomorrow</strong>. I'm also a big fan of open source and I intend to give back to the community what it has given me by sharing my discoveries.
+						</p>]]></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}
+				{{'Welcome to backend - Titouan Thd'|trans}}
+			{% endblock %}
+		</title>
+		<link
+		rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+		{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('app') }}
+		{% endblock %}
+
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+		{% endblock %}
+	</head>
+	<body class="vh-100 w-100 overflow-hidden bg-light" data-turbo="false">
+		{% block header %}
+			<header style="height:51px;">
+				<nav class="navbar navbar-expand-lg fixed-top border-bottom border-white">
+					<div class="container-fluid">
+
+						<div class="col d-flex align-items-center justify-content-start gap-2">
+							<button class="btn btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarLabels" aria-expanded="false" aria-controls="sidebarLabels">
+								<i class="bi bi-list"></i>
+							</button>
+							<small class="fw-light mb-0">/{{ page_title|lower }}</small>
+						</div>
+
+						<div class="col-auto">
+							<a href="{{ path('admin_index')}}" class="navbar-brand fw-bold text-decoration-none">Admin</a>
+						</div>
+
+						<div class="col d-flex position-relative justify-content-end">
+							<a href="#" class="btn btn-sm btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+								{{ app.user.pseudo }}
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end mt-1">
+								<li>
+									<a href="{{ path('app_home') }}" class="dropdown-item" type="button">
+										<i class="bi bi-house me-1"></i>
+										Back to site
+									</a>
+								</li>
+								<li>
+									<a href="{{ path('admin_user_edit', {id: app.user.id })}}" class="dropdown-item" type="button">
+										<i class="bi bi-pencil me-1"></i>
+										Profile
+									</a>
+								</li>
+								<li>
+									<a href="{{ path('app_logout')}}" class="dropdown-item" type="button">
+										<i class="bi bi-power me-1"></i>
+										Logout
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</nav>
+			</header>
+		{% endblock %}
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-auto py-3">
+					{% block sidebar %}
+						{{ component('admin_sidebar', { user_id: app.user.id }) }}
+					{% endblock %}
+				</div>
+				<div style="height:calc(100vh - 57px)" class="col overflow-auto">
+					<div class="p-3 bg-white shadow-sm mb-3">
+						{% block alert %}
+							{{ component('flashes') }}
+						{% endblock %}
+						{% block body %}
+							<p class="mb-0">Default content</p>
+						{% endblock %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

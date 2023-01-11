@@ -1,0 +1,127 @@
+{% set lastItem = (this.data.currentPageNumber * this.limit) < this.data.getTotalItemCount ? (this.data.currentPageNumber * this.limit) : this.data.getTotalItemCount %}
+{% set firstItem = lastItem != 0 ? (this.data.currentPageNumber * this.limit) - this.limit + 1 : 0 %}
+
+{% set totalItems = this.data|length %}
+
+{% set showLink = 'admin_' ~ this.entity ~ '_show' %}
+{% set editLink = 'admin_' ~ this.entity ~ '_edit' %}
+{% set alias = this.entity|first|lower %}
+<div>
+	<div class="overflow-auto">
+		<h1>{{ this.title }}</h1>
+		<div {{ stimulus_controller('AdminTable', {entity: this.entity, toexport: this.data|serialize('json', { groups: 'user:read'}) } ) }}>
+			<div class="action-bar">
+				<div class="py-2">
+					<div class="d-flex justify-content-between">
+						<div class="d-flex gap-2">
+							<a class="btn btn-sm btn-light text-nowrap" href="{{path('admin_index')}}">
+								<i class="bi bi-arrow-return-left me-1"></i>
+								Back
+							</a>
+							<p class="btn btn-sm btn-light text-secondary text-nowrap disabled mb-0">
+								<span id="itemsData">items:&nbsp;{{ firstItem }}-{{lastItem}}/{{this.data.getTotalItemCount}}</span>
+							</p>
+							<form action="" method="GET">
+								<div class="input-group input-group-sm flex-nowrap">
+									<span class="input-group-text" id="basic-limit">Limit</span>
+									<input style="min-width:50px;" aria-label="Limit" aria-describedby="basic-limit" name="limit" type="text" class="form-control" id="limit" placeholder="10" value="{{this.limit}}">
+								</div>
+								<input type="hidden" type="text" value="{{ this.data.currentPageNumber }}"/>
+							</form>
+						</div>
+						<div class="d-flex gap-2">
+							<div id="moreActions" class="d-flex d-none gap-2">
+								{# <button id="delete" type="button" class="btn btn-sm btn-light text-nowrap" data-action="click->AdminTable#deleteselection">
+									<i class="bi bi-trash3 me-1"></i>
+									Delete
+								</button> #}
+								<div id="export" class="dropdown">
+									<button class="btn btn-sm btn-light text-nowrap" type="button" id="toggleExport" data-bs-toggle="dropdown" aria-expanded="false">
+										<i class="bi bi-arrow-bar-down me-1"></i>
+										Export
+									</button>
+									<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="toggleExport">
+										<li>
+											<button data-exportjson-id-param="json" data-action="click->AdminTable#exportjson" class="dropdown-item text-nowrap" type="button" name="json">
+												json
+											</button>
+										</li>
+										<li>
+											<button data-exportcsv-id-param="json" data-action="click->AdminTable#exportcsv" class="dropdown-item text-nowrap" type="button" name="csv">
+												csv
+											</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<button class="btn btn-sm btn-light text-nowrap" type="button" id="toggleFilter" data-action="click->AdminTable#openfilter">
+								<i class="bi bi-filter me-1"></i>
+								Search
+							</button>
+							<a href="{{ path('admin_' ~ this.entity ~ '_new')}}" class="btn btn-sm btn-success text-nowrap">
+								<i class="bi bi-plus me-1"></i>
+								Create
+							</a>
+						</div>
+					</div>
+					<div id="filterWrapper" class="d-flex d-none justify-content-end mt-2" show="false">
+						<form class="input-group input-group-sm w-auto mb-0">
+							<span class="input-group-text" id="basic-filter">Search</span>
+							<input data-action="input->AdminTable#onfilterkeyup" type="text" class="form-control" placeholder="" aria-label="Filtrer" aria-describedby="filterValue" id="filterInput" value=""/>
+						</form>
+						<button data-action="click->AdminTable#closefilter" class="btn btn-sm btn-outline-danger rounded-circle border-0 ms-1" type="button">
+							<i class="bi bi-x"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="">
+				<table class="table table-bordered bg-white mb-0">
+					<thead>
+						<tr>
+							<th name="check">
+								<input id="checkAllTriger" data-action="click->AdminTable#checkall" type="checkbox" class="form-check">
+							</th>
+							{% for col in cols %}
+								<th name="{{col}}">{{ knp_pagination_sortable(this.data, col, alias ~ '.' ~ col) }}</th>
+							{% endfor %}
+							<th name="actions">
+								<div class="text-end">actions</div>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for entity in this.data %}
+							<tr id="{{entity.id}}">
+								<td name="check"><input id="{{entity.id}}" data-action="click->AdminTable#check" class="action-checkbox" type="checkbox"></td>
+								{% for col in cols %}
+									<td name="{{col}}">{{ entity[col]|json_encode }}</td>
+								{% endfor %}
+								<td name="actions">
+									<div class="d-flex justify-content-end gap-2">
+										<a href="{{ path(showLink, {'id': entity.id}) }}" class="btn btn-sm btn-light text-nowrap">
+											<i class="bi bi-eye me-1"></i>
+											show
+										</a>
+										<a href="{{ path(editLink, {'id': entity.id}) }}" class="btn btn-sm btn-primary text-nowrap">
+											<i class="bi bi-pencil me-1"></i>
+											edit
+										</a>
+									</div>
+								</td>
+							</tr>
+						{% else %}
+							<tr>
+								<td colspan="8">no records found</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="my-3">
+			{{ knp_pagination_render(this.data) }}
+		</div>
+	</div>
+</div>

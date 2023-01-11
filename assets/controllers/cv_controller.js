@@ -1,8 +1,10 @@
 import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
-  rotate() {
-    this.element.classList.toggle("rotate-180");
+  static targets = ["cvWrapper"];
+
+  rotate(event) {
+    event.target.classList.toggle("rotate-180");
   }
 
   download_titouanthd_cv_small() {

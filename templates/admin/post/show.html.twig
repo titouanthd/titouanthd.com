@@ -1,0 +1,70 @@
+{% extends 'layouts/admin.html.twig' %}
+
+{% block title %}
+	{{ page_title }}
+{% endblock %}
+
+{% block body %}
+	<div>
+		<h1>{{ page_title }}</h1>
+		<div class="d-flex justify-content-between my-2">
+			<a class="btn btn-sm btn-light" href="{{ path('admin_post_index') }}">
+				<i class="bi bi-arrow-return-left me-1"></i>
+				Back
+			</a>
+			<a class="btn btn-sm btn-secondary" href="{{ path('admin_post_edit', {id: post.id})}}">
+				<i class="bi bi-pencil me-1"></i>
+				Edit
+			</a>
+		</div>
+
+		<div class="overflow-auto">
+			<table class="table table-bordered bg-white mb-0">
+				<tbody>
+					<tr>
+						<th>id</th>
+						<td>{{ post.id }}</td>
+					</tr>
+					<tr>
+						<th>title</th>
+						<td>{{ post.title }}</td>
+					</tr>
+					<tr>
+						<th>slug</th>
+						<td>{{ post.slug }}</td>
+					</tr>
+					<tr>
+						<th>content</th>
+						<td>{{ post.content }}</td>
+					</tr>
+					<tr>
+						<th>author</th>
+						<td>{{ post.author ? post.author.pseudo : '' }}</td>
+					</tr>
+					<tr>
+						<th>ft_image</th>
+						<td>{{ post.ftImage }}</td>
+					</tr>
+					<tr>
+						<th>status</th>
+						<td>{{ post.status }}</td>
+					<tr>
+						<th>created_at</th>
+						<td>{{ post.createdAt ? post.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+					</tr>
+					<tr>
+						<th>updated_at</th>
+						<td>{{ post.updatedAt ? post.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="p-2 border border-top-0">
+			<div class="d-flex justify-content-between my-2">
+				{{ include('admin/post/_delete_form.html.twig') }}
+			</div>
+		</div>
+
+	</div>
+{% endblock %}

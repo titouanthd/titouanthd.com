@@ -1,10 +1,10 @@
-<div id="cv" class="row equal border mx-0 px-0 mb-0">
+<div id="cv" data-CV-target="cvWrapper" class="row equal border mx-0 px-0 mb-0">
 	<div class="col-12 col-sm-5 col-md-4 col-lg-3 px-0 order-1 order-sm-0">
 		<div class="bg-light h-100 p-3 p-lg-4">
 			<img style="width:240px;" class="img-thumbnail rounded-circle shadow mb-3" src="https://dam.malt.com/guz7tdpxgfunfupdkcpu?gravity=face&func=face&face_margin=60&w=440&h=440&force_format=png" alt="">
 
 			<div id="contact-me" class="mb-4">
-				<h4>Contact me</h4>
+				<h4>{{'Contact me'|trans}}</h4>
 				<div class="d-flex">
 					<small class="mb-1">
 						<i class="bi bi-envelope-paper me-2"></i>
@@ -27,7 +27,7 @@
 			</div>
 
 			<div id="my-skills" class="mb-4">
-				<h4>My favorite tools</h4>
+				<h4>{{'My favorite tools'|trans}}</h4>
 
 				<div class="row g-2 my-2">
 					<div class="col-auto">
@@ -102,7 +102,7 @@
 			</div>
 
 			<div id="languages">
-				<h4>Language skills</h4>
+				<h4>{{'Language skills'|trans}}</h4>
 
 				<div class="row g-2 mt-2" id="french-skill">
 					<div class="col-auto">
@@ -110,7 +110,8 @@
 					</div>
 					<div class="col d-flex align-items-center">
 						<div class="progress w-100">
-							<div class="progress-bar bg-french w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">French - 100%</div>
+							<div class="progress-bar bg-french w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">{{'French'|trans}}
+								- 100%</div>
 						</div>
 					</div>
 				</div>
@@ -121,7 +122,8 @@
 					</div>
 					<div class="col d-flex align-items-center">
 						<div class="progress w-100">
-							<div class="progress-bar bg-english w-75" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">English - 75%</div>
+							<div class="progress-bar bg-english w-75" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">{{'English'|trans}}
+								- 75%</div>
 						</div>
 					</div>
 				</div>
@@ -132,7 +134,8 @@
 					</div>
 					<div class="col d-flex align-items-center">
 						<div class="progress w-100">
-							<div class="progress-bar bg-spain w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Spanish - 50%</div>
+							<div class="progress-bar bg-spain w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">{{'Spanish'|trans}}
+								- 50%</div>
 						</div>
 					</div>
 				</div>
@@ -142,17 +145,17 @@
 
 	<div class="col-12 col-sm-7 col-md-8 col-lg-9 px-3 my-3">
 		<main>
-			<h2 class="h4">Titouan Thebaud</h2>
-			<h1 class="mb-4">Full-Stack web developper</h1>
+			<h2 class="h4">{{'Titouan Thebaud'|trans}}</h2>
+			<h1 class="mb-4">{{'Full-Stack web developper'|trans}}</h1>
 
 			<section id="profil">
-				<h3 class="mb-3">Profil</h3>
-				<p>Hello, my name is Titouan Thebaud and I am a 27 years old passionate and self-taught full-stack web developer. I am looking for the next opportunity that will take me to the next level as a developer.</p>
+				<h3 class="mb-3">{{'Profile'|trans}}</h3>
+				<p>{{'Hello, my name is Titouan Thebaud and I am a 27 years old passionate and self-taught full-stack web developer. I am looking for the next opportunity that will take me to the next level as a developer.'|trans}}</p>
 				<hr>
 			</section>
 
 			<section id="experience">
-				<h3 class="mb-3">Professional experiences</h3>
+				<h3 class="mb-3">{{'Professional experiences'|trans}}</h3>
 
 				<div class="row my-3" id="siclem-xp">
 					<div class="col-auto">
@@ -161,29 +164,29 @@
 					<div class="col">
 						<div class="row">
 							<div class="col">
-								<h5 class="m-0">Full-stack web developer</h4>
+								<h5 class="m-0">{{'Full-stack web developer'|trans}}</h4>
 							</div>
 							<div class="col-auto">
-								<small class="rotate" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-siclem-xp" aria-expanded="false" aria-controls="collapse-siclem-xp" data-controller="CV" data-action="click->CV#rotate">
-									<i class="bi bi-arrow-down"></i>
+								<small class="d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-siclem-xp" aria-expanded="false" aria-controls="collapse-siclem-xp" data-action="click->CV#rotate">
+									<i class="bi bi-arrow-down rotate"></i>
 								</small>
 							</div>
 							<div class="col-12">
 								<small>
 									<a href="https://siclem.fr" target="_blank">Siclem</a>
 								</small>
-								<small class="m-0 mb-2">June 2017 - Today . 5 years and 8 mounths</small>
+								<small class="m-0 mb-2">{{'June 2017 - Today . 5 years and 8 mounths'|trans}}</small>
 							</div>
 							<div class="col-12">
 								<ul class="collapse mb-0" id="collapse-siclem-xp">
 									<li>
-										<small>Project management (landing page, dynamic and e-commerce) from the specification to the production.</small>
+										<small>{{'Project management (landing page, dynamic and e-commerce) from the specification to the production.'|trans}}</small>
 									</li>
 									<li>
-										<small>Optimization of natural referencing and performance (caching, minification, image conversion...) of WordPress site</small>
+										<small>{{'Optimization of natural referencing and performance (caching, minification, image conversion...) of WordPress site'|trans}}</small>
 									</li>
 									<li>
-										<small>Creation of WordPress Themes & Plugins for several objectives (custom blocks, admin pages...)</small>
+										<small>{{'Creation of WordPress Themes & Plugins for several objectives (custom blocks, admin pages...)'|trans}}</small>
 									</li>
 								</ul>
 							</div>
@@ -198,32 +201,32 @@
 					<div class="col">
 						<div class="row">
 							<div class="col">
-								<h5 class="m-0">Back-end developer</h4>
+								<h5 class="m-0">{{'Back-end developer'|trans}}</h4>
 							</div>
 							<div class="col-auto">
-								<small class="rotate" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-en-bourse-xp" aria-expanded="false" aria-controls="collapse-en-bourse-xp" data-controller="CV" data-action="click->CV#rotate">
-									<i class="bi bi-arrow-down"></i>
+								<small class="d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-en-bourse-xp" aria-expanded="false" aria-controls="collapse-en-bourse-xp" data-action="click->CV#rotate">
+									<i class="bi bi-arrow-down rotate"></i>
 								</small>
 							</div>
 							<div class="col-12">
 								<small>
 									<a href="https://en-bourse.fr" target="_blank">En Bourse</a>
 								</small>
-								<small class="m-0 mb-2">June 2021 - December 2022 . 1 year and 7 mounths</small>
+								<small class="m-0 mb-2">{{'June 2021 - December 2022 . 1 year and 7 mounths'|trans}}</small>
 							</div>
 							<div class="col-12">
 								<ul class="collapse mb-0" id="collapse-en-bourse-xp">
 									<li>
-										<small>Creation of a wordpress plugin to replace google analytics</small>
+										<small>{{'Creation of a wordpress plugin to replace google analytics'|trans}}</small>
 									</li>
 									<li>
-										<small>Creation of php/sql scripts to automate database manipulation (migration, update,save...)</small>
+										<small>{{'Creation of php/sql scripts to automate database manipulation (migration, update,save...)'|trans}}</small>
 									</li>
 									<li>
-										<small>Creation of SPA with Vue.js and REST API</small>
+										<small>{{'Creation of SPA with Vue.js and REST API'|trans}}</small>
 									</li>
 									<li>
-										<small>Javascripts and CSS optimisation</small>
+										<small>{{'Javascripts and CSS optimisation'|trans}}</small>
 									</li>
 								</ul>
 							</div>
@@ -238,29 +241,29 @@
 					<div class="col">
 						<div class="row">
 							<div class="col">
-								<h5 class="m-0">Business developer</h4>
+								<h5 class="m-0">{{'Business developer'|trans}}</h4>
 							</div>
 							<div class="col-auto">
-								<small class="rotate" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-webmecanik-xp" aria-expanded="false" aria-controls="collapse-webmecanik-xp" data-controller="CV" data-action="click->CV#rotate">
-									<i class="bi bi-arrow-down"></i>
+								<small class="d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-webmecanik-xp" aria-expanded="false" aria-controls="collapse-webmecanik-xp" data-action="click->CV#rotate">
+									<i class="bi bi-arrow-down rotate"></i>
 								</small>
 							</div>
 							<div class="col-12">
 								<small>
 									<a href="https://www.webmecanik.com/" target="_blank">Webmecanik</a>
 								</small>
-								<small class="m-0 mb-2">October 2018 - April 2019 . 7 mounths</small>
+								<small class="m-0 mb-2">{{'October 2018 - April 2019 . 7 mounths'|trans}}</small>
 							</div>
 							<div class="col-12">
 								<ul class="collapse mb-0" id="collapse-webmecanik-xp">
 									<li>
-										<small>Creation of a customer portfolio</small>
+										<small>{{'Creation of a customer portfolio'|trans}}</small>
 									</li>
 									<li>
-										<small>Acquisition through marketing automation (<a href="https://www.mautic.org/" target="_blank">Mautic</a>)</small>
+										<small>{{'Acquisition through marketing automation'|trans}} (<a href="https://www.mautic.org/" target="_blank">Mautic</a>)</small>
 									</li>
 									<li>
-										<small>Webinar and video conference animation</small>
+										<small>{{'Webinar and video conference animation'|trans}}</small>
 									</li>
 								</ul>
 							</div>
@@ -275,29 +278,29 @@
 					<div class="col">
 						<div class="row">
 							<div class="col">
-								<h5 class="m-0">Sales assistant</h4>
+								<h5 class="m-0">{{'Sales assistant'|trans}}</h4>
 							</div>
 							<div class="col-auto">
-								<small class="rotate" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bmw-group-xp" aria-expanded="false" aria-controls="collapse-bmw-group-xp" data-controller="CV" data-action="click->CV#rotate">
-									<i class="bi bi-arrow-down"></i>
+								<small class="d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-bmw-group-xp" aria-expanded="false" aria-controls="collapse-bmw-group-xp" data-action="click->CV#rotate">
+									<i class="bi bi-arrow-down rotate"></i>
 								</small>
 							</div>
 							<div class="col-12">
 								<small>
 									<a href="https://partenaire.bmw-motorrad.fr/grandprixmotos" target="_blank">BMW GrandPrix Moto</a>
 								</small>
-								<small class="m-0 mb-2">November 2017 - October 2018 . 1 year and 1 mounths</small>
+								<small class="m-0 mb-2">{{'November 2017 - October 2018 . 1 year and 1 mounths'|trans}}</small>
 							</div>
 							<div class="col-12">
 								<ul class="collapse mb-0" id="collapse-bmw-group-xp">
 									<li>
-										<small>Implementation of new processes for the sales team (photo booth, online cross platform selling for second hand)</small>
+										<small>{{'Implementation of new processes for the sales team (photo booth, online cross platform selling for second hand)'|trans}}</small>
 									</li>
 									<li>
-										<small>Customer care & support</small>
+										<small>{{'Customer care & support'|trans}}</small>
 									</li>
 									<li>
-										<small>Sale and follow-up of motorcycle insurance contracts</small>
+										<small>{{'Sale and follow-up of motorcycle insurance contracts'|trans}}</small>
 									</li>
 								</ul>
 							</div>
@@ -312,29 +315,29 @@
 					<div class="col">
 						<div class="row">
 							<div class="col">
-								<h5 class="m-0">Sales assistant</h4>
+								<h5 class="m-0">{{'Sales assistant'|trans}}</h4>
 							</div>
 							<div class="col-auto">
-								<small class="rotate" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-sunimmo-xp" aria-expanded="false" aria-controls="collapse-sunimmo-xp" data-controller="CV" data-action="click->CV#rotate">
-									<i class="bi bi-arrow-down"></i>
+								<small class="d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-sunimmo-xp" aria-expanded="false" aria-controls="collapse-sunimmo-xp" data-action="click->CV#rotate">
+									<i class="bi bi-arrow-down rotate"></i>
 								</small>
 							</div>
 							<div class="col-12">
 								<small>
 									<a href="https://mysunimmo.ch/" target="_blank">Sunimmo</a>
 								</small>
-								<small class="m-0 mb-2">February 2017 - November 2017 . 10 mounths</small>
+								<small class="m-0 mb-2">{{'February 2017 - November 2017 . 10 mounths'|trans}}</small>
 							</div>
 							<div class="col-12">
 								<ul class="collapse mb-0" id="collapse-sunimmo-xp">
 									<li>
-										<small>Creation of the agency's website with WordPress</small>
+										<small>{{'Creation of the agency\'s website with WordPress'|trans}}</small>
 									</li>
 									<li>
-										<small>Implementation of commercial operations (distribution of flyers, telephone and online canvassing)</small>
+										<small>{{'Implementation of commercial operations (distribution of flyers, telephone and online canvassing)'|trans}}</small>
 									</li>
 									<li>
-										<small>Customer reception, visit of property</small>
+										<small>{{'Customer reception, visit of property'|trans}}</small>
 									</li>
 								</ul>
 							</div>
@@ -349,29 +352,29 @@
 					<div class="col">
 						<div class="row">
 							<div class="col">
-								<h5 class="m-0">Sergeant - Aircraft Mechanics</h4>
+								<h5 class="m-0">{{'Sergeant - Aircraft Mechanics'|trans}}</h4>
 							</div>
 							<div class="col-auto">
-								<small class="rotate" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-french-army-xp" aria-expanded="false" aria-controls="collapse-french-army-xp" data-controller="CV" data-action="click->CV#rotate">
-									<i class="bi bi-arrow-down"></i>
+								<small class="d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-french-army-xp" aria-expanded="false" aria-controls="collapse-french-army-xp" data-action="click->CV#rotate">
+									<i class="bi bi-arrow-down rotate"></i>
 								</small>
 							</div>
 							<div class="col-12">
 								<small>
 									<a href="https://www.sengager.fr/regiments/4e-regiment-dhelicopteres-des-forces-speciales" target="_blank">4th RHFS</a>
 								</small>
-								<small class="m-0 mb-2">February 2015 - February 2017 . 2 years</small>
+								<small class="m-0 mb-2">{{'February 2015 - February 2017 . 2 years'|trans}}</small>
 							</div>
 							<div class="col-12">
 								<ul class="collapse mb-0" id="collapse-french-army-xp">
 									<li>
-										<small>Creation of the agency's website with WordPress</small>
+										<small>{{'Creation of the agency\'s website with WordPress'|trans}}</small>
 									</li>
 									<li>
-										<small>Implementation of commercial operations (distribution of flyers, telephone and online canvassing)</small>
+										<small>{{'Implementation of commercial operations (distribution of flyers, telephone and online canvassing)'|trans}}</small>
 									</li>
 									<li>
-										<small>Customer reception, visit of property</small>
+										<small>{{'Customer reception, visit of property'|trans}}</small>
 									</li>
 								</ul>
 							</div>
@@ -382,7 +385,7 @@
 			</section>
 
 			<section id="education">
-				<h3 class="mb-3">Training & Education</h3>
+				<h3 class="mb-3">{{'Training & Education'|trans}}</h3>
 
 				<div class="row my-3" id="ipac-bachelor-factory-xp">
 					<div class="col-auto">
@@ -391,29 +394,29 @@
 					<div class="col">
 						<div class="row">
 							<div class="col">
-								<h5 class="m-0">Bachelor Communication and Web Marketing</h4>
+								<h5 class="m-0">{{'Bachelor Communication and Web Marketing'|trans}}</h4>
 							</div>
 							<div class="col-auto">
-								<small class="rotate" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ipac-bachelor-factory-xp" aria-expanded="false" aria-controls="collapse-ipac-bachelor-factory-xp" data-controller="CV" data-action="click->CV#rotate">
-									<i class="bi bi-arrow-down"></i>
+								<small class="d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ipac-bachelor-factory-xp" aria-expanded="false" aria-controls="collapse-ipac-bachelor-factory-xp" data-action="click->CV#rotate">
+									<i class="bi bi-arrow-down rotate"></i>
 								</small>
 							</div>
 							<div class="col-12">
 								<small>
 									<a href="https://www.ipacbachelorfactory.com/" target="_blank">Ipac Bachelor Factory</a>
 								</small>
-								<small class="m-0 mb-2">September 2018 - June 2019 . 1 years</small>
+								<small class="m-0 mb-2">{{'September 2018 - June 2019 . 1 years'|trans}}</small>
 							</div>
 							<div class="col-12">
 								<ul class="collapse mb-0" id="collapse-ipac-bachelor-factory-xp">
 									<li>
-										<small>Titre II, Communication numérique - multimédia</small>
+										<small>{{'Titre II, Communication numérique - multimédia'|trans}}</small>
 									</li>
 									<li>
-										<small>Learning of content creation/management tools (PhotoShop, Illustrator, WordPress...)</small>
+										<small>{{'Learning of content creation/management tools (PhotoShop, Illustrator, WordPress...)'|trans}}</small>
 									</li>
 									<li>
-										<small>Use of different digital communication channels (social networks, emailing, search engine advertising...)</small>
+										<small>{{'Use of different digital communication channels (social networks, emailing, search engine advertising...)'|trans}}</small>
 									</li>
 								</ul>
 							</div>
@@ -428,29 +431,29 @@
 					<div class="col">
 						<div class="row">
 							<div class="col">
-								<h5 class="m-0">Professional training for sales assistants</h4>
+								<h5 class="m-0">{{'Professional training for sales assistants'|trans}}</h4>
 							</div>
 							<div class="col-auto">
-								<small class="rotate" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ipac-xp" aria-expanded="false" aria-controls="collapse-ipac-xp" data-controller="CV" data-action="click->CV#rotate">
-									<i class="bi bi-arrow-down"></i>
+								<small class="d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ipac-xp" aria-expanded="false" aria-controls="collapse-ipac-xp" data-action="click->CV#rotate">
+									<i class="bi bi-arrow-down rotate"></i>
 								</small>
 							</div>
 							<div class="col-12">
 								<small>
 									<a href="https://www.ipac-france.com/" target="_blank">IPAC</a>
 								</small>
-								<small class="m-0 mb-2">September 2017 - June 2018 . 1 years</small>
+								<small class="m-0 mb-2">{{'September 2017 - June 2018 . 1 years'|trans}}</small>
 							</div>
 							<div class="col-12">
 								<ul class="collapse mb-0" id="collapse-ipac-xp">
 									<li>
-										<small>Title III, Sales techniques and sales operations</small>
+										<small>{{'Title III, Sales techniques and sales operations'|trans}}</small>
 									</li>
 									<li>
-										<small>Learning of sales techniques, canvassing and customer follow-up</small>
+										<small>{{'Learning of sales techniques, canvassing and customer follow-up'|trans}}</small>
 									</li>
 									<li>
-										<small>Learning of the Office suite (Excel, PPT...)</small>
+										<small>{{'Learning of the Office suite (Excel, PPT...)'|trans}}</small>
 									</li>
 								</ul>
 							</div>
@@ -465,29 +468,29 @@
 					<div class="col">
 						<div class="row">
 							<div class="col">
-								<h5 class="m-0">Technical certificate of 1st level, Military</h4>
+								<h5 class="m-0">{{'Technical certificate of 1st level, Military'|trans}}</h4>
 							</div>
 							<div class="col-auto">
-								<small class="rotate" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ensoa-xp" aria-expanded="false" aria-controls="collapse-ensoa-xp" data-controller="CV" data-action="click->CV#rotate">
-									<i class="bi bi-arrow-down"></i>
+								<small class="d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ensoa-xp" aria-expanded="false" aria-controls="collapse-ensoa-xp" data-action="click->CV#rotate">
+									<i class="bi bi-arrow-down rotate"></i>
 								</small>
 							</div>
 							<div class="col-12">
 								<small>
 									<a href="https://www.defense.gouv.fr/terre/ecole-nationale-officiers-dactive" target="_blank">ENSOA</a>
 								</small>
-								<small class="m-0 mb-2">September 2015 - May 2016 . 8 months</small>
+								<small class="m-0 mb-2">{{'September 2015 - May 2016 . 8 months'|trans}}</small>
 							</div>
 							<div class="col-12">
 								<ul class="collapse mb-0" id="collapse-ensoa-xp">
 									<li>
-										<small>Validation of TOEIC level B1 (ability to speak English)</small>
+										<small>{{'Validation of TOEIC level B1 (ability to speak English)'|trans}}</small>
 									</li>
 									<li>
-										<small>Learning of the military discipline</small>
+										<small>{{'Learning of the military discipline'|trans}}</small>
 									</li>
 									<li>
-										<small>Command training as a team leader</small>
+										<small>{{'Command training as a team leader'|trans}}</small>
 									</li>
 								</ul>
 							</div>
@@ -502,13 +505,13 @@
 					<div class="col">
 						<div class="row">
 							<div class="col">
-								<h5 class="m-0">Scientific Baccalaureate</h4>
+								<h5 class="m-0">{{'Scientific Baccalaureate'|trans}}</h4>
 							</div>
 							<div class="col-12">
 								<small>
-									<a href="https://ambroise-croizat.ent.auvergnerhonealpes.fr/" target="_blank">Ambroise Croizat high school</a>
+									<a href="https://ambroise-croizat.ent.auvergnerhonealpes.fr/" target="_blank">{{'Ambroise Croizat high school'|trans}}</a>
 								</small>
-								<small class="m-0 mb-2">Jully 2014</small>
+								<small class="m-0 mb-2">{{'Jully 2014'|trans}}</small>
 							</div>
 						</div>
 					</div>
@@ -517,8 +520,8 @@
 			</section>
 
 			<section id="outside-of-work">
-				<h3>Outside of work</h3>
-				<p class="mb-0">In my free time, I enjoy learning and improving my skills by working on personal projects and hobbies. I also value spending time with my loved ones, whether it be with my family or friends. I have a passion for travel and exploring different cultures. I find great joy in discovering new places and learning about the history and customs of different parts of the world.</p>
+				<h3>{{'Outside of work'|trans}}</h3>
+				<p class="mb-0">{{'In my free time, I enjoy learning and improving my skills by working on personal projects and hobbies. I also value spending time with my loved ones, whether it be with my family or friends. I have a passion for travel and exploring different cultures. I find great joy in discovering new places and learning about the history and customs of different parts of the world.'|trans}}</p>
 			</section>
 		</main>
 	</div>

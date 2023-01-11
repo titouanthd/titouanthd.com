@@ -1,0 +1,9 @@
+{% extends 'layouts/admin.html.twig' %}
+
+{% block title %}
+	{{ page_title }}
+{% endblock %}
+
+{% block body %}
+	{{ component('admin_table', { title: page_title, entity: 'user', data: users, cols: cols, user_id: app.user.id, limit: limit }) }}
+{% endblock %}

@@ -120,6 +120,25 @@ class RegistrationController extends AbstractController
         // @TODO Change the redirect on success and handle or remove the flash message in your templates
         $this->addFlash('success', 'Your email address has been verified.');
 
-        return $this->redirectToRoute('app_login');
+        return $this->redirectToRoute('app_profile');
+    }
+
+    // Resend verification link route
+    #[Route('/resend-verification-link/{id}/', name: 'app_resend_verification_link', methods: ['GET', 'POST'])]
+    public function resendVerificationLink(User $user, TranslatorInterface $translator): Response
+    {
+        // generate a signed url and email it to the user
+        $this->emailVerifier->sendEmailConfirmation('app_verify_email', $user,
+            (new TemplatedEmail())
+                ->from(new Address('mailer@titouanthd.com', 'Ti Bot'))
+                ->to($user->getEmail())
+                ->subject($translator->trans('Please Confirm your Email'))
+                ->htmlTemplate('emails/confirmation_email.html.twig')
+        );
+
+        $this->addFlash('success', $translator->trans('A new verification link has been sent to your email address.'));
+
+        return $this->redirectToRoute('app_profile');
+
     }
 }

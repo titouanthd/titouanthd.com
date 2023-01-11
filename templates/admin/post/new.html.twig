@@ -1,0 +1,33 @@
+{% extends 'layouts/admin.html.twig' %}
+
+{% block title %}
+	{{ page_title }}
+{% endblock %}
+
+{% block body %}
+	<div>
+		<h1>{{ page_title }}</h1>
+		<div class="d-flex justify-content-between my-2">
+			<a class="btn btn-sm btn-light" href="{{ path('admin_post_index') }}">
+				<i class="bi bi-arrow-return-left me-1"></i>
+				Back
+			</a>
+		</div>
+		<div class="card rounded-0">
+			<div class="card-body">
+				{{ form_start(form) }}
+				{{ form_widget(form) }}
+			</div>
+			<div class="card-footer">
+				<div class="d-flex justify-content-between my-2">
+					<button class="btn btn-sm btn-primary">
+						<i class="bi bi-save me-1"></i>
+						Update
+					</button>
+				</div>
+			</div>
+			{{ form_rest(form) }}
+			{{ form_end(form) }}
+		</div>
+	</div>
+{% endblock %}

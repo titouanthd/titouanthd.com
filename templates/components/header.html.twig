@@ -1,7 +1,7 @@
 {% set currentRoute = app.request.attributes.get('_route') %}
 {% set currentUrl = path(app.request.attributes.get('_route')	, app.request.attributes.get('_route_params')) %}
 
-<header {{ attributes }}>
+<header>
 	<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="{{path('app_home')}}">
@@ -14,6 +14,9 @@
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item">
 						<a class="nav-link {% if currentRoute == 'app_home' %}active{% endif %}" aria-current="page" href="{{path('app_home')}}">{{'Home'|trans}}</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link {% if '/blog/' in currentUrl %}active{% endif %}" aria-current="page" href="{{path('app_blog_index')}}">{{'Blog'|trans}}</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link {% if currentRoute == 'app_my_cv' or currentRoute == 'app_my_covering_letter' %}active{% endif %} dropdown-toggle" id="documentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,9 +47,16 @@
 					{% if app.user %}
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								{{ app.user.email }}
+								{{ app.user.pseudo }}
 							</a>
 							<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+								{% if is_granted('ROLE_ADMIN') %}
+								<li>
+									<a class="dropdown-item" href="{{path('admin_index')}}">
+										<i class="bi bi-gear me-2"></i>
+										{{'Go back'|trans}}</a>
+								</li>
+								{% endif %}
 								<li>
 									<a class="dropdown-item" href="{{path('app_profile')}}">
 										<i class="bi bi-person-lines-fill me-2"></i>
