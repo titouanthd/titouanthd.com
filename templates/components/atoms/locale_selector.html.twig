@@ -1,0 +1,15 @@
+<div class="dropdown">
+	<a class="btn btn-sm btn-primary dropdown-toggle" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		{{'Language'|trans}}
+	</a>
+	<ul data-controller="LocaleSelector" class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+		<li>
+		
+			{{ this.locale }}
+			{# <button data-localswitch-target="french" data-action="click->LocaleSelector#switch" data-language="fr" class="dropdown-item {% if this.locale == 'fr' %}active{% endif %}">{{'French'|trans}}</button> #}
+		</li>
+		<li>
+			<button data-localswitch-target="english" data-action="click->LocaleSelector#switch" data-language="en" class="dropdown-item {% if this.locale == 'en' %}active{% endif %}">{{'English'|trans}}</button>
+		</li>
+	</ul>
+</div>

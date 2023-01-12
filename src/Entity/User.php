@@ -241,7 +241,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface, \ArrayA
     {
         return property_exists($this, $offset);
     }
-    public function offsetGet($offset)
+
+    public function offsetGet($offset): mixed
     {
         return $this->$offset;
     }

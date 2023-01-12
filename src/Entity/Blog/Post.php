@@ -170,7 +170,11 @@ class Post implements \ArrayAccess
     {
         return property_exists($this, $offset);
     }
-    public function offsetGet($offset)
+
+    /**
+     * @return mixed
+     */
+    public function offsetGet($offset): mixed
     {
         return $this->$offset;
     }

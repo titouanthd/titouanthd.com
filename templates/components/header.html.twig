@@ -31,19 +31,6 @@
 							</li>
 						</ul>
 					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							{{'Language'|trans}}
-						</a>
-						<ul data-controller="LocalSwitch" class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-							<li>
-								<button data-localswitch-target="french" data-action="click->LocalSwitch#switch" data-language="fr" class="dropdown-item {% if '/fr/' in currentUrl %}active{% endif %}">{{'French'|trans}}</button>
-							</li>
-							<li>
-								<button data-localswitch-target="english" data-action="click->LocalSwitch#switch" data-language="en" class="dropdown-item {% if '/en/' in currentUrl %}active{% endif %}">{{'English'|trans}}</button>
-							</li>
-						</ul>
-					</li>
 					{% if app.user %}
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

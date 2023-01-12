@@ -2,10 +2,6 @@
 
 namespace App\Controller;
 
-use App\Entity\User;
-use App\Security\EmailVerifier;
-use Symfony\Component\Mime\Address;
-use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -14,15 +10,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class FrontController extends AbstractController
 {
-    // add new route on / to redirect to home with default locale
-    #[Route('/', name: 'app_home_redirect')]
-    public function homeRedirect(): Response
-    {
-        return $this->redirectToRoute('app_home', ['_locale' => 'en']);
-    }
-
-    #[Route('/{_locale}/', name: 'app_home', defaults: ['_locale' => 'en'], requirements: ['_locale' => 'en|fr'])]
-    public function home(Request $request): Response
+    #[Route('/', name: 'app_home', defaults: ['_locale' => 'en'], requirements: ['_locale' => 'en|fr'])]
+    public function home(): Response
     {
         return $this->render('front/home.html.twig', [
             'controller_name' => 'FrontController',
@@ -30,21 +19,21 @@ class FrontController extends AbstractController
     }
 
     // add new route to access to my CV page
-    #[Route('/{_locale}/documents/my-cv/', name: 'app_my_cv', methods: ['GET'], defaults: ['_locale' => 'en'], requirements: ['_locale' => 'en|fr'])]
+    #[Route('/documents/my-cv/', name: 'app_my_cv', methods: ['GET'], defaults: ['_locale' => 'en'], requirements: ['_locale' => 'en|fr'])]
     public function cv(): Response
     {
         return $this->render('front/my-cv.html.twig');
     }
 
     // add new route to access to my CV page
-    #[Route('/{_locale}/documents/my-covering-letter/', name: 'app_my_covering_letter', methods: ['GET'], defaults: ['_locale' => 'en'], requirements: ['_locale' => 'en|fr'])]
+    #[Route('/documents/my-covering-letter/', name: 'app_my_covering_letter', methods: ['GET'], defaults: ['_locale' => 'en'], requirements: ['_locale' => 'en|fr'])]
     public function coverLetter(): Response
     {
         return $this->render('front/my-covering-letter.html.twig');
     }
 
     // create a profile page
-    #[Route('/{_locale}/profile/', name: 'app_profile', methods: ['GET', 'POST'], defaults: ['_locale' => 'en'], requirements: ['_locale' => 'en|fr'])]
+    #[Route('/profile/', name: 'app_profile', methods: ['GET', 'POST'], defaults: ['_locale' => 'en'], requirements: ['_locale' => 'en|fr'])]
     public function profile(TranslatorInterface $translator): Response
     {
         $user = $this->getUser();
