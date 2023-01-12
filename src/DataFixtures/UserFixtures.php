@@ -35,10 +35,10 @@ class UserFixtures extends Fixture
 
         $manager->persist($admin);
         // echo pseudo and create a new reference for this user
-        echo $admin->getPseudo() . ' has been created' . PHP_EOL;
+        echo 'admin has been created' . PHP_EOL;
         $this->addReference('admin', $admin);
 
-        for ( $i = 1; $i < 10; $i++ ) {
+        for ( $i = 1; $i < 11; $i++ ) {
             $user = new User();
             $user->setEmail('user' . $i . '@localhost');
             $user->setPseudo('user' . $i);
@@ -57,7 +57,7 @@ class UserFixtures extends Fixture
 
             $manager->persist($user);
             // echo pseudo and create a new reference for this user
-            echo $user->getPseudo() . ' has been created' . PHP_EOL;
+            echo 'user'.$i.' has been created' . PHP_EOL;
             $this->addReference('user' . $i, $user);
         }
 

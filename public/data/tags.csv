@@ -1,0 +1,31 @@
+name,description,slug
+Web Development,Where the magic happens,web-development
+Programming,Like solving puzzles but way harder,programming
+IA,When robots take over the world,ia
+Blockchain,Decentralize the revolution,blockchain
+JavaScript,The language that makes websites interactive,javascript
+CSS,Because one color is just not enough,css
+HTML,Building blocks of the web,html
+React,Making reusable components since 2013,react
+Vue.js,The "Vue" you need in your life,vue-js
+Angular,Where HTML and JavaScript meet,angular
+Node.js,JavaScript on steroids,node-js
+Git, Version control for the indecisive,git
+API, Glue that holds the internet together,api
+Docker,Contain your excitement,docker
+Python,Because sometimes JavaScript just isn't enough,python
+Java, Old but gold,java
+Kubernetes,Orchestrating the Cloud,kubernetes
+Sass,Syntactically Awesome Style Sheets,sass
+TypeScript,Making JavaScript more strict,typescript
+GraphQL, Flexible way to fetch data,graphql
+Rust, Memory safety without GC,rust
+Go, Simple and efficient,go
+PHP, Still going strong,php
+Elixir, Functional programming language on BEAM,elixir
+Ruby, Rails make web development fun again,ruby
+Scala, Java but better,scala
+Elm, Functional front-end language,elm
+Clojure, LISP in JVM,clojure
+Erlang, Concurrent programming language,erlang
+Haskell, Purely functional programming,haskell

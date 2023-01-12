@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repository;
+namespace App\Repository\Blog;
 
-use App\Entity\Post;
+use App\Entity\Blog\Post;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
@@ -37,6 +37,22 @@ class PostRepository extends ServiceEntityRepository
         if ($flush) {
             $this->getEntityManager()->flush();
         }
+    }
+
+    // new function used to get posts order by counting reactions desc
+    // reactions is a collection of reaction entitie (see Post entity)
+    public function getTopPosts(int $limit)
+    {
+        return $this->createQueryBuilder('p')
+            ->select('p', 'COUNT(r) as reactions')
+            ->leftJoin('p.reactions', 'r')
+            ->where('p.status = :status')
+            ->setParameter('status', 'published')
+            ->groupBy('p')
+            ->orderBy('reactions', 'DESC')
+            ->setMaxResults($limit)
+            ->getQuery()
+            ->getResult();
     }
 
 //    /**

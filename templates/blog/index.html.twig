@@ -1,21 +1,45 @@
 {% extends 'layouts/base.html.twig' %}
 
-{% block title %}{{page_title}}{% endblock %}
+{% block title %}
+	{{page_title}}
+{% endblock %}
 
 {% block body %}
-	<img src="https://picsum.photos/1920/450" class="img-fluid" alt="">
-	<div class="container">
+	{% set currentRoute = app.request.attributes.get('_route') %}
+	<div class="container header-margin">
 		<div class="row">
-			<div class="col-12 my-3 text-center">
-				<h1>{{'Welcome on my dev cheat sheet !'|trans}}</h1>
-                <p class="font-monospace">{{'Here I talk about web. Just under you can find my latest publication.'}}</p>
+			<div class="col-12 col-md-3 col-lg-2 my-3">
+				{{component('blog_sidebar')}}
 			</div>
-
-            <div class="col-12">
-                <h4>{{ last_post.title }}</h4>
-                <p class="m-0">{{ last_post.created_at|date('d/m/Y H:i') }}</p>
-                <img src="{{ last_post.ft_image }}" class="img-fluid" alt="">
-            </div>
+			<div class="col-12 col-md-9 col-lg-8 my-3">
+				<ul class="nav nav-pills mb-3 gap-2" id="pills-tab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<a class="btn btn btn-outline-light text-dark fw-bold {% if currentRoute == 'app_blog_relevant' %}active{% endif %}" href="{{path('app_blog_index')}}">Relevant</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="btn btn btn-outline-light text-dark fw-bold {% if currentRoute == 'app_blog_latest' %}active{% endif %}" href="{{path('app_blog_latest')}}">Latest</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="btn btn btn-outline-light text-dark fw-bold {% if currentRoute == 'app_blog_top' %}active{% endif %}" href="{{path('app_blog_top')}}">Top</a>
+					</li>
+				</ul>
+				<div class="tab-content" id="pills-tabContent">
+					<div class="tab-pane fade show active" id="pills-relevant" role="tabpanel" aria-labelledby="pills-relevant-tab">
+						<div class="row g-3">
+							{% for post in listing %}
+								{# if post is iterable re set post #}
+								{% if post is iterable %}
+									{% set post = post[0] %}
+								{% endif %}
+								<div class="col-12">
+									{{ component('post_card', {post: post}) }}
+								</div>
+							{% endfor %}
+							{{ knp_pagination_render(listing) }}
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 {% endblock %}

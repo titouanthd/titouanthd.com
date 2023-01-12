@@ -1,10 +1,14 @@
 <?php
 
-namespace App\Entity;
+namespace App\Entity\Blog;
 
+use App\Entity\Blog\Tag;
+use App\Entity\User;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
-use App\Repository\PostRepository;
+use App\Repository\Blog\PostRepository;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\Common\Collections\ArrayCollection;
 
 #[ORM\Entity(repositoryClass: PostRepository::class)]
 class Post implements \ArrayAccess
@@ -37,6 +41,28 @@ class Post implements \ArrayAccess
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
     private ?\DateTimeInterface $updated_at = null;
+
+    #[ORM\Column]
+    private ?bool $relevant = null;
+
+    #[ORM\Column]
+    private ?int $reading_time = null;
+
+    #[ORM\ManyToMany(targetEntity: Tag::class, inversedBy: 'posts')]
+    private Collection $tags;
+
+    #[ORM\OneToMany(mappedBy: 'post', targetEntity: Comment::class)]
+    private Collection $comments;
+
+    #[ORM\OneToMany(mappedBy: 'post', targetEntity: Reaction::class)]
+    private Collection $reactions;
+
+    public function __construct()
+    {
+        $this->tags = new ArrayCollection();
+        $this->comments = new ArrayCollection();
+        $this->reactions = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -155,5 +181,113 @@ class Post implements \ArrayAccess
     public function offsetUnset($offset): void
     {
         unset($this->$offset);
+    }
+
+    public function isRelevant(): ?bool
+    {
+        return $this->relevant;
+    }
+
+    public function setRelevant(bool $relevant): self
+    {
+        $this->relevant = $relevant;
+
+        return $this;
+    }
+
+    public function getReadingTime(): ?int
+    {
+        return $this->reading_time;
+    }
+
+    public function setReadingTime(int $reading_time): self
+    {
+        $this->reading_time = $reading_time;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Tag>
+     */
+    public function getTags(): Collection
+    {
+        return $this->tags;
+    }
+
+    public function addTag(Tag $tag): self
+    {
+        if (!$this->tags->contains($tag)) {
+            $this->tags->add($tag);
+        }
+
+        return $this;
+    }
+
+    public function removeTag(Tag $tag): self
+    {
+        $this->tags->removeElement($tag);
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Comment>
+     */
+    public function getComments(): Collection
+    {
+        return $this->comments;
+    }
+
+    public function addComment(Comment $comment): self
+    {
+        if (!$this->comments->contains($comment)) {
+            $this->comments->add($comment);
+            $comment->setPost($this);
+        }
+
+        return $this;
+    }
+
+    public function removeComment(Comment $comment): self
+    {
+        if ($this->comments->removeElement($comment)) {
+            // set the owning side to null (unless already changed)
+            if ($comment->getPost() === $this) {
+                $comment->setPost(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Reaction>
+     */
+    public function getReactions(): Collection
+    {
+        return $this->reactions;
+    }
+
+    public function addReaction(Reaction $reaction): self
+    {
+        if (!$this->reactions->contains($reaction)) {
+            $this->reactions->add($reaction);
+            $reaction->setPost($this);
+        }
+
+        return $this;
+    }
+
+    public function removeReaction(Reaction $reaction): self
+    {
+        if ($this->reactions->removeElement($reaction)) {
+            // set the owning side to null (unless already changed)
+            if ($reaction->getPost() === $this) {
+                $reaction->setPost(null);
+            }
+        }
+
+        return $this;
     }
 }

@@ -1,0 +1,40 @@
+{% set countComments = post.comments|length %}
+
+<div class="card">
+	<a href="{{path('app_blog_show_post', {slug: post.slug})}}">
+		<img src="{{ post.ft_image }}" class="img-fluid card-img-top" alt="...">
+	</a>
+	<div class="card-body">
+		<small class="font-monospace text-muted mb-2">{{ post.created_at|date() }}</small>
+		<a href="{{path('app_blog_show_post', {slug: post.slug})}}" class="text-decoration-none">
+			<h2 class="card-title my-2">{{ post.title }}</h2>
+		</a>
+		
+		<div class="row g-2">
+			<div class="col-12">
+				<div class="d-flex flex-wrap gap-2">
+					{% for tag in post.tags %}
+						{{component('atoms/tag_link', {tag: tag})}}
+					{% endfor %}
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="d-flex flex-wrap justify-content-between">
+					<div class="d-flex flex-wrap gap-2">
+						{{ component('atoms/add_reaction', {post: post})}}
+						{{ component('atoms/add_comment', {post: post})}}
+					</div>
+					<div class="d-flex flex-wrap gap-2">
+						<p class="btn btn-sm m-0 disabled">
+							{{ post.readingTime }}
+							min read
+						</p>
+						<a href="{{path('app_blog_show_post', {slug: post.slug})}}#save-post" class="btn btn-sm btn-light">
+							<i class="bi bi-bookmark"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
